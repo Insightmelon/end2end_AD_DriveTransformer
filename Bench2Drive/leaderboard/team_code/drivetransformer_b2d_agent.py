@@ -17,9 +17,9 @@ from PIL import Image
 from torchvision import transforms as T
 
 import sys
-sys.path.append("/home/slxy/zca/code/Bench2Drive")
+sys.path.append("/workspace/end2end_AD_DriveTransformer/Bench2Drive")
 
-from DriveTransformer.team_code.pid_controller import DecouplePIDController
+from team_code.pid_controller import DecouplePIDController
 from leaderboard.autoagents import autonomous_agent
 from mmcv import Config
 from mmcv.models import build_model

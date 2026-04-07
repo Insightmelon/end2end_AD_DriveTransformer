@@ -162,7 +162,7 @@ dropout = 0.0
 model = dict(
     type='DriveTransformer',
     use_grid_mask=False,
-    pretrained=dict(img="./ckpts/resnet50-19c8e357.pth"),
+    pretrained=dict(img="/workspace/end2end_AD_DriveTransformer/DriveTransformer/ckpts/resnet50-19c8e357.pth"),
     img_backbone=dict(
         type='ResNet',
         depth=50,
@@ -561,4 +561,3 @@ find_unused_parameters = True
 checkpoint_config = dict(interval=3000)
 
 custom_hooks = [dict(type='CustomSetEpochInfoHook')]
-

@@ -1,25 +1,31 @@
 #!/bin/bash
 
 # 设置环境变量
-export CARLA_ROOT="/home/slxy/zca/code/drivetransformer_private/carla"
-export CARLA_SERVER="/home/slxy/zca/code/drivetransformer_private/carla/CarlaUE4.sh"
-export SCENARIO_RUNNER_ROOT="/home/slxy/zca/code/BenchDrive/scenario_runner"
-export PYTHONPATH="/home/slxy/zca/code/drivetransformer_private/carla/PythonAPI:/home/slxy/zca/code/drivetransformer_private/carla/PythonAPI/carla:/home/slxy/zca/code/drivetransformer_private/carla/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg:/home/slxy/zca/code/BenchDrive:/home/slxy/zca/code/BenchDrive/leaderboard:/home/slxy/zca/code/BenchDrive/leaderboard/team_code:/home/slxy/zca/code/BenchDrive:/home/slxy/zca/code/BenchDrive/scenario_runner"
+export CARLA_ROOT="/workspace/end2end_AD_DriveTransformer/carla"
+export CARLA_SERVER="/workspace/end2end_AD_DriveTransformer/carla/CarlaUE4.sh"
+export SCENARIO_RUNNER_ROOT="/workspace/end2end_AD_DriveTransformer/Bench2Drive/scenario_runner"
+export PYTHONPATH="/workspace/end2end_AD_DriveTransformer/carla/PythonAPI:/workspace/end2end_AD_DriveTransformer/carla/PythonAPI/carla:/workspace/end2end_AD_DriveTransformer/carla/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg:/workspace/end2end_AD_DriveTransformer/Bench2Drive:/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard:/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/team_code:/workspace/end2end_AD_DriveTransformer/Bench2Drive:/workspace/end2end_AD_DriveTransformer/Bench2Drive/scenario_runner"
+export XDG_RUNTIME_DIR="/tmp/runtime-carlauser"
+export VK_ICD_FILENAMES="/etc/vulkan/icd.d/my_nvidia_icd.json"
+mkdir -p "$XDG_RUNTIME_DIR"
 
 # Python路径
-PYTHON="/home/slxy/.miniconda3/envs/drivetransformer/bin/python"
+PYTHON="/workspace/miniconda3/envs/dt38/bin/python"
 PROGRAM="leaderboard/leaderboard/leaderboard_evaluator.py"
 
-cd /home/slxy/zca/code/Bench2Drive
+cd /workspace/end2end_AD_DriveTransformer/Bench2Drive
+
+# 创建输出目录
+mkdir -p DriveTransformer_b2d_only_traj
 
 # 执行命令
 $PYTHON $PROGRAM \
-    --routes=leaderboard/data/drivetransformer_bench2drive_dev4.xml \
+    --routes=/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/data/drivetransformer_bench2drive_dev4.xml \
     --repetitions=1 \
     --track=SENSORS \
-    --checkpoint=DriveTransformer_b2d_only_traj/eval_bench2drive_dev4.json \
-    --agent=leaderboard/team_code/drivetransformer_vis_agent.py \
-    --agent-config=DriveTransformer/adzoo/drivetransformer/configs/drivetransformer/drivetransformer_large.py+DriveTransformer/ckpts/drivetransformer_large.pth \
+    --checkpoint=/workspace/end2end_AD_DriveTransformer/Bench2Drive/DriveTransformer_b2d_only_traj/eval_bench2drive_dev4.json \
+    --agent=/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/team_code/drivetransformer_vis_agent.py \
+    --agent-config=/workspace/end2end_AD_DriveTransformer/DriveTransformer/adzoo/drivetransformer/configs/drivetransformer/drivetransformer_large.py+/workspace/end2end_AD_DriveTransformer/DriveTransformer/ckpts/drivetransformer_large.pth \
     --debug=0 \
     --record="" \
     --port=30001 \
