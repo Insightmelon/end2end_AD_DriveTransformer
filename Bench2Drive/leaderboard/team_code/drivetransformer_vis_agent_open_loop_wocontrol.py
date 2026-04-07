@@ -547,6 +547,20 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
                 next_transform = waypoint.transform
 
                 ego_traj_fix_time = output_data_batch[0]['ego_fut_preds_fix_time'][0,selected_mode,:,[1,0]].float().cpu().numpy()
+                self.pid_metadata['steer'] = None
+                self.pid_metadata['throttle'] = None
+                self.pid_metadata['brake'] = None
+                self.pid_metadata['speed'] = float(tick_data['speed'])
+                self.pid_metadata['target_location'] = [
+                    float(next_transform.location.x),
+                    float(next_transform.location.y),
+                    float(next_transform.location.z),
+                ]
+                self.pid_metadata['target_rotation'] = [
+                    float(next_transform.rotation.pitch),
+                    float(next_transform.rotation.yaw),
+                    float(next_transform.rotation.roll),
+                ]
                 self.save(tick_data, ego_traj_fix_time[:,[1,0]].copy(), output_data_batch)
 
                 return ("OPEN_LOOP", next_transform)
@@ -658,6 +672,71 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
         pos_tmp = pos[..., None] / dim_t
         posemb = np.stack((np.sin(pos_tmp[..., 0::2]), np.cos(pos_tmp[..., 1::2])), axis=-1)
         return posemb.reshape(-1)
+
+    def _to_serializable(self, value):
+        if isinstance(value, torch.Tensor):
+            return value.detach().cpu().tolist()
+        if isinstance(value, np.ndarray):
+            return value.tolist()
+        if isinstance(value, (np.floating, np.integer)):
+            return value.item()
+        if isinstance(value, (list, tuple)):
+            return [self._to_serializable(v) for v in value]
+        if isinstance(value, dict):
+            return {k: self._to_serializable(v) for k, v in value.items()}
+        if hasattr(value, 'tensor'):
+            return self._to_serializable(value.tensor)
+        return value
+
+    def _build_frame_metadata(self, tick_data, ego_traj, result=None):
+        metadata = dict(self.pid_metadata)
+        metadata.update({
+            'step': int(self.step),
+            'frame': int(self.step // 2),
+            'speed': float(tick_data['speed']),
+            'gps': self._to_serializable(tick_data['gps']),
+            'position': self._to_serializable(tick_data['pos']),
+            'compass': float(tick_data['compass']) if not np.isnan(tick_data['compass']) else None,
+            'acceleration': self._to_serializable(tick_data['acceleration']),
+            'angular_velocity': self._to_serializable(tick_data['angular_velocity']),
+            'command_near': int(tick_data['command_near']),
+            'command_far': int(tick_data['command_far']),
+            'command_near_xy': self._to_serializable(tick_data['command_near_xy']),
+            'command_far_xy': self._to_serializable(tick_data['command_far_xy']),
+            'ego_traj': self._to_serializable(ego_traj),
+            'use_gt_teleport': bool(USE_GT_TELEPORT),
+            'use_controller': bool(USE_CONTROLLER),
+        })
+        if self.open_loop_route is not None:
+            metadata['open_loop_route_length'] = len(self.open_loop_route)
+
+        if result is None:
+            return metadata
+
+        frame_result = result[0]
+        detections = {
+            'boxes_3d': self._to_serializable(frame_result.get('boxes_3d')),
+            'scores_3d': self._to_serializable(frame_result.get('scores_3d')),
+            'labels_3d': self._to_serializable(frame_result.get('labels_3d')),
+        }
+        metadata['detections'] = detections
+
+        if 'trajs_3d' in frame_result:
+            metadata['detections']['trajs_3d'] = self._to_serializable(frame_result.get('trajs_3d'))
+        if 'trajs_score' in frame_result:
+            metadata['detections']['trajs_score'] = self._to_serializable(frame_result.get('trajs_score'))
+
+        metadata['map_predictions'] = {
+            'map_scores_3d': self._to_serializable(frame_result.get('map_scores_3d')),
+            'map_labels_3d': self._to_serializable(frame_result.get('map_labels_3d')),
+            'map_pts_3d': self._to_serializable(frame_result.get('map_pts_3d')),
+        }
+
+        for key in ['ego_fut_preds_fix_time', 'ego_fut_preds_fix_dist']:
+            if key in frame_result:
+                metadata[key] = self._to_serializable(frame_result[key])
+
+        return metadata
     
     def save(self, tick_data,ego_traj,result=None):
         frame = self.step // 2
@@ -684,9 +763,10 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
         imgs_with_box['CAM_FRONT'] = self.draw_traj(new_ego_traj, imgs_with_box['CAM_FRONT'])
         for cam, img in imgs_with_box.items():
             Image.fromarray(img).save(self.save_path / str.lower(cam).replace('cam','rgb') / ('%04d.png' % frame))   
-                
+
+        frame_metadata = self._build_frame_metadata(tick_data, ego_traj, result)
         outfile = open(self.save_path / 'meta' / ('%04d.json' % frame), 'w')
-        json.dump(self.pid_metadata, outfile, indent=4)
+        json.dump(frame_metadata, outfile, indent=4)
         outfile.close()
         
     def draw_traj(self, traj, raw_img,canvas_size=(900,1600),thickness=3,is_ego=True,hue_start=120,hue_end=80):
