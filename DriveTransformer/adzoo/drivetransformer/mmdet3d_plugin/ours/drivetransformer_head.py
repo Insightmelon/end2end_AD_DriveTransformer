@@ -289,9 +289,8 @@ class DriveTransformerlHead(BaseModule):
         # self.agent_query shape:[self.agent_num_query, self.embed_dims]
         # self.agent_reference_points shape:[self.agent_num_query, 3]
 
-        # 替换此处代码
-        self.agent_query = torch.randn(self.agent_num_query, self.embed_dims).to("cuda")
-        self.agent_reference_points = torch.randn(self.agent_num_query, 3).to("cuda")
+        self.agent_query = nn.Embedding(self.agent_num_query, self.embed_dims)
+        self.agent_reference_points = nn.Embedding(self.agent_num_query, 3)
 
         ###################################################################
         self.agent_reference_points.requires_grad_(False)
@@ -528,7 +527,23 @@ class DriveTransformerlHead(BaseModule):
         # index="xy"
         # x, y = meshgrid()
         # 替换此处代码
-        x = y = torch.randn(num_grid_per_dim_agent, num_grid_per_dim_agent).to("cuda")
+        # x = y = torch.randn(num_grid_per_dim_agent, num_grid_per_dim_agent).to("cuda")
+        assert num_grid_per_dim_agent ** 2 == self.agent_reference_points.weight.shape[0]
+        x_coords = torch.linspace(
+            self.pc_range[0],
+            self.pc_range[3],
+            steps=num_grid_per_dim_agent,
+            device=self.agent_reference_points.weight.device,
+            dtype=self.agent_reference_points.weight.dtype,
+        )
+        y_coords = torch.linspace(
+            self.pc_range[1],
+            self.pc_range[4],
+            steps=num_grid_per_dim_agent,
+            device=self.agent_reference_points.weight.device,
+            dtype=self.agent_reference_points.weight.dtype,
+        )
+        x, y = torch.meshgrid(x_coords, y_coords, indexing='xy')
         
         ###################################################################
         with torch.no_grad():
@@ -538,6 +553,7 @@ class DriveTransformerlHead(BaseModule):
         nn.init.constant_(self.agent_query.weight, 0)
         
         num_grid_per_dim_map = int(np.sqrt(self.map_reference_points.weight.shape[0]))
+        assert num_grid_per_dim_map ** 2 == self.map_reference_points.weight.shape[0]
         with torch.no_grad():
             self.map_reference_points.weight[..., 0] = x.flatten()
             self.map_reference_points.weight[..., 1] = y.flatten()
@@ -573,9 +589,12 @@ class DriveTransformerlHead(BaseModule):
         # agent_query = nn.Embedding.weight (N, D) -> (bs, N, D) .to(dtype)
         # agent_reference_points = nn.Embedding.weight (N, D) -> (bs, N, D)
         # 替换此处代码
-        agent_query = torch.randn(bs, self.agent_query.shape[0], self.agent_query.shape[1]).to("cuda")
-        agent_reference_points = torch.randn(bs, self.agent_reference_points.shape[0], \
-                                             self.agent_reference_points.shape[1]).to("cuda")
+        # agent_query = torch.randn(bs, self.agent_query.shape[0], self.agent_query.shape[1]).to("cuda")
+        # agent_reference_points = torch.randn(bs, self.agent_reference_points.shape[0], \
+        #                                     self.agent_reference_points.shape[1]).to("cuda")
+        agent_query = self.agent_query.weight.unsqueeze(0).repeat(bs, 1, 1).to(dtype)
+        agent_reference_points = self.agent_reference_points.weight.unsqueeze(0).repeat(bs, 1, 1)
+
         
         ###################################################################
         ## Online Mapping
@@ -585,9 +604,11 @@ class DriveTransformerlHead(BaseModule):
         # map_query = nn.Embedding.weight (N, D) -> (bs, N, D)
         # map_reference_points = nn.Embedding.weight (N, D) -> (bs, N, D)
         # 替换此处代码
-        map_query = torch.randn(bs, self.map_query.weight.shape[0], self.map_query.weight.shape[1]).to("cuda")
-        map_reference_points = torch.randn(bs, self.map_reference_points.weight.shape[0], \
-                                             self.map_reference_points.weight.shape[1]).to("cuda")
+        # map_query = torch.randn(bs, self.map_query.weight.shape[0], self.map_query.weight.shape[1]).to("cuda")
+        # map_reference_points = torch.randn(bs, self.map_reference_points.weight.shape[0], \
+        #                                      self.map_reference_points.weight.shape[1]).to("cuda")
+        map_query = self.map_query.weight.unsqueeze(0).repeat(bs, 1, 1).to(dtype)
+        map_reference_points = self.map_reference_points.weight.unsqueeze(0).repeat(bs, 1, 1)
 
         ###################################################################
         ## Temporal Alignment

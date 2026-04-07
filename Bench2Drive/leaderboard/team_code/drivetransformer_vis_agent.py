@@ -773,7 +773,14 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
         # TODO-9 vis 3d bbox
         # project pts_4d to image2d using lidar2img_rt
         # 替换此处代码
-        pts_2d = pts_4d
+        # pts_2d = pts_4d
+        pts_2d = pts_4d @ lidar2img_rt.T
+        depth = pts_2d[:, 2].copy()
+        pts_2d[:, 0] = pts_2d[:, 0] / np.maximum(depth, 1e-5)
+        pts_2d[:, 1] = pts_2d[:, 1] / np.maximum(depth, 1e-5)
+        pts_2d = pts_2d[:, :3]
+        pts_2d[:, 2] = depth
+
         ################################################
         imgfov_pts_2d = pts_2d[..., :2].reshape(num_bbox, 8, 2)
         depth = pts_2d[..., 2].reshape(num_bbox, 8)

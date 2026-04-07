@@ -712,9 +712,12 @@ class DriveTransformerDecoderLayer(BaseModule):
                 # project-1
                 # 允许agent看agent
                 # 替换此处代码
+                mask[agent_range, agent_range] = False
                 pass
                 # 允许map看agent, map
                 # 替换此处代码
+                mask[map_range, agent_range] = False
+                mask[map_range, map_range] = False
                 pass
                 ###############################################################
                 # project-2
