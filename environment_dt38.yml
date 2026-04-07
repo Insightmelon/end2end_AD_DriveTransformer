@@ -95,6 +95,7 @@ dependencies:
       - bleach==6.1.0
       - blinker==1.8.2
       - cachetools==5.5.2
+      - carla==0.9.15
       - casadi==3.7.2
       - certifi==2026.2.25
       - cffi==1.17.1
