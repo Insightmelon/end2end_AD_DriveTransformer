@@ -1,1 +1,9 @@
+carla/
+ckpts/
+data/
+*.pth
+*.pt
+*.tar.gz
+*.egg
 *.so
+
