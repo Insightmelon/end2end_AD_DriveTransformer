@@ -252,6 +252,98 @@ Recommended practice:
 
 These are not just theoretical notes. They came directly from bringing this project up on a fresh headless instance.
 
+## Switching instances with Vast.ai storage copy
+
+Vast.ai storage copy turned out to be a practical way to move work from one instance to another when the original machine was stopped but not destroyed.
+
+Practical pattern:
+
+1. keep the source instance stopped so its storage is preserved
+2. provision a destination instance with enough disk capacity
+3. use Vast.ai storage copy from the source instance to the destination instance
+4. validate the copied environment on the destination instance before resuming work
+
+What storage copy preserved well in practice:
+
+- repository changes under `/workspace/end2end_AD_DriveTransformer`
+- local documents and setup notes
+- checkpoints under `DriveTransformer/ckpts`
+- the copied Miniconda tree under `/workspace/miniconda3`
+- CARLA files stored under `/workspace/end2end_AD_DriveTransformer/carla`
+
+What still needed to be revalidated on the new instance:
+
+- `carlauser` runtime permissions
+- `sudo` behavior for `carlauser`
+- GPU driver health through `nvidia-smi`
+- Vulkan health through `vulkaninfo --summary`
+- CARLA runtime health by launching CARLA and checking port `30002`
+
+Two concrete issues appeared after switching with storage copy:
+
+### `carlauser` existed but lost passwordless `sudo`
+
+The copied workspace preserved the user-related expectations in the project, but the new instance still needed system-level sudo configuration to be restored.
+
+Symptom:
+
+```bash
+sudo -n true
+sudo: a password is required
+```
+
+Fix:
+
+```bash
+usermod -aG sudo carlauser
+echo 'carlauser ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/90-carlauser
+chmod 440 /etc/sudoers.d/90-carlauser
+```
+
+Then verify:
+
+```bash
+su - carlauser
+sudo -n true && echo "sudo ok"
+```
+
+### `nvidia-smi` initially failed after the copy
+
+After switching instances, `nvidia-smi` failed with a driver/library mismatch and Vulkan also failed. This turned out not to be a project problem but an instance-level GPU runtime problem.
+
+Observed symptoms:
+
+```bash
+nvidia-smi
+Failed to initialize NVML: Driver/library version mismatch
+```
+
+and:
+
+```bash
+vulkaninfo --summary
+vkCreateInstance failed with ERROR_INCOMPATIBLE_DRIVER
+```
+
+What fixed it in practice:
+
+- reboot the new instance
+- rerun:
+
+```bash
+nvidia-smi
+export VK_ICD_FILENAMES=/etc/vulkan/icd.d/my_nvidia_icd.json
+vulkaninfo --summary
+```
+
+After reboot, both `nvidia-smi` and Vulkan returned to a healthy state and CARLA launched normally again.
+
+Bottom line:
+
+- storage copy is very effective for preserving `/workspace` state
+- storage copy does not guarantee that system-level runtime state is still valid on the destination instance
+- always recheck GPU, Vulkan, `carlauser`, and CARLA launch after an instance switch
+
 ### 1. `nvidia-smi` being healthy is not enough
 
 The instance can see the GPU and still fail to start CARLA.

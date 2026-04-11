@@ -33,6 +33,8 @@ If you are setting up a fresh instance, read [VASTAI_SETUP.md](/workspace/end2en
 4. `Lessons learned and common pitfalls`
 5. `Post-run outputs`
 
+If you are switching to a new instance but already copied storage from an older one, read the `Switching instances with Vast.ai storage copy` section in [VASTAI_SETUP.md](/workspace/end2end_AD_DriveTransformer/VASTAI_SETUP.md) first.
+
 ## Practical summary
 
 For a new instance, the most important rules are:
