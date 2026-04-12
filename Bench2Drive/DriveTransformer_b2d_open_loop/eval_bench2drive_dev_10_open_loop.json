@@ -31,7 +31,7 @@
             "meta": {
                 "total_length": 117.121,
                 "duration_game": 29.35,
-                "duration_system": 1864.812,
+                "duration_system": 1465.035,
                 "exceptions": []
             }
         },
@@ -45,7 +45,7 @@
                 "route_id": "RouteScenario_3255_rep0",
                 "scenario_name": "ParkingCrossingPedestrian_1",
                 "weather_id": "0",
-                "save_name": "RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_04_07_18_40_00",
+                "save_name": "RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_04_11_17_02_19",
                 "status": "Completed",
                 "num_infractions": 24,
                 "infractions": {
@@ -97,7 +97,7 @@
                 "meta": {
                     "route_length": 117.121,
                     "duration_game": 29.35,
-                    "duration_system": 1864.812
+                    "duration_system": 1465.035
                 },
                 "town_name": "Town13"
             }

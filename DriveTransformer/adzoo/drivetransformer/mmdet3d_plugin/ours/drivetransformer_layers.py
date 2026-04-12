@@ -723,9 +723,13 @@ class DriveTransformerDecoderLayer(BaseModule):
                 # project-2
                 # 允许agent看agent, map
                 # 替换此处代码
+                mask[agent_range, agent_range] = False
+                mask[agent_range, map_range] = False
                 pass
                 # 允许map看agent, map
                 # 替换此处代码
+                mask[map_range, agent_range] = False
+                mask[map_range, map_range] = False
                 pass
                 ###############################################################
                 # project-3
@@ -920,19 +924,116 @@ class DriveTransformerDecoder(TransformerLayerSequence):
             agent_traj_cls = traj_cls_branches[lid](agent_query_mode)
             intermediate_agent_traj_cls.append(agent_traj_cls)
             intermediate_agent_traj_coords.append(agent_traj_ref)
-            # online mapping
+            
+            '''# online mapping
             #########################################################################
             # project-2 
+            map_reg_input = map_query + map_pts_pos_embed
             if self.refine: # coarse-to-fine optimization
                 # TODO-7 get map_pts_coord
                 # input: map_query + map_pts_pos_embed
                 # map_pts_coord_refine = map_reg_branches[lid](input)  # shape -> map_pts_coord.shape
                 # map_pts_coord = map_pts_coord_refine + map_pts_coord
+                map_pts_coord_refine = map_reg_branches[lid](map_reg_input).view(
+                    map_pts_coord.shape[0], map_pts_coord.shape[1], map_pts_coord.shape[2], 2)
+                map_pts_coord = map_pts_coord_refine + map_pts_coord
                 pass
             else:
                 # map_pts_coord = map_reg_branches[lid](input)  # shape -> map_pts_coord.shape
+                map_pts_coord = map_reg_branches[lid](map_reg_input).view(
+                    map_pts_coord.shape[0], map_pts_coord.shape[1], map_pts_coord.shape[2], 2)
                 pass
             #########################################################################
+            '''
+            # online mapping
+            #########################################################################
+            # project-2
+
+            # 先检查 attention 后的 map_query / map_pts_pos_embed / map_pts_coord 是否已经坏了
+            if not torch.isfinite(map_query).all():
+                raise RuntimeError(
+                    f"[TODO-7 debug] map_query invalid before regression: "
+                    f"shape={tuple(map_query.shape)}"
+                )
+
+            if not torch.isfinite(map_pts_pos_embed).all():
+                raise RuntimeError(
+                    f"[TODO-7 debug] map_pts_pos_embed invalid before regression: "
+                    f"shape={tuple(map_pts_pos_embed.shape)}"
+                )
+
+            if not torch.isfinite(map_pts_coord).all():
+                raise RuntimeError(
+                    f"[TODO-7 debug] map_pts_coord invalid before regression: "
+                    f"shape={tuple(map_pts_coord.shape)}"
+                )
+
+            map_reg_input = map_query + map_pts_pos_embed
+
+            if not torch.isfinite(map_reg_input).all():
+                print("[TODO-7 debug] map_query stats:",
+                    map_query.min().item(), map_query.max().item())
+                print("[TODO-7 debug] map_pts_pos_embed stats:",
+                    map_pts_pos_embed.min().item(), map_pts_pos_embed.max().item())
+                raise RuntimeError(
+                    f"[TODO-7 debug] map_reg_input invalid: "
+                    f"shape={tuple(map_reg_input.shape)}"
+                )
+
+            map_reg_output = map_reg_branches[lid](map_reg_input)
+
+            if not torch.isfinite(map_reg_output).all():
+                print("[TODO-7 debug] map_reg_input stats:",
+                    map_reg_input.min().item(), map_reg_input.max().item())
+                raise RuntimeError(
+                    f"[TODO-7 debug] map_reg_output invalid: "
+                    f"shape={tuple(map_reg_output.shape)}"
+                )
+
+            print(
+                f"[TODO-7 debug] lid={lid}, "
+                f"map_query={tuple(map_query.shape)}, "
+                f"map_pts_pos_embed={tuple(map_pts_pos_embed.shape)}, "
+                f"map_pts_coord={tuple(map_pts_coord.shape)}, "
+                f"map_reg_output={tuple(map_reg_output.shape)}"
+            )
+
+            if self.refine:  # coarse-to-fine optimization
+                map_pts_coord_refine = map_reg_output.view(
+                    map_pts_coord.shape[0],
+                    map_pts_coord.shape[1],
+                    map_pts_coord.shape[2],
+                    2,
+                )
+
+                if not torch.isfinite(map_pts_coord_refine).all():
+                    print("[TODO-7 debug] map_pts_coord_refine stats:",
+                        map_pts_coord_refine.min().item(), map_pts_coord_refine.max().item())
+                    raise RuntimeError("[TODO-7 debug] map_pts_coord_refine invalid")
+
+                map_pts_coord = map_pts_coord_refine + map_pts_coord
+
+                if not torch.isfinite(map_pts_coord).all():
+                    print("[TODO-7 debug] map_pts_coord_refine stats:",
+                        map_pts_coord_refine.min().item(), map_pts_coord_refine.max().item())
+                    print("[TODO-7 debug] updated map_pts_coord stats:",
+                        map_pts_coord.min().item(), map_pts_coord.max().item())
+                    raise RuntimeError("[TODO-7 debug] map_pts_coord invalid after refine")
+
+            else:
+                map_pts_coord = map_reg_output.view(
+                    map_pts_coord.shape[0],
+                    map_pts_coord.shape[1],
+                    map_pts_coord.shape[2],
+                    2,
+                )
+
+                if not torch.isfinite(map_pts_coord).all():
+                    print("[TODO-7 debug] map_pts_coord stats:",
+                        map_pts_coord.min().item(), map_pts_coord.max().item())
+                    raise RuntimeError("[TODO-7 debug] map_pts_coord invalid in non-refine branch")
+            #########################################################################
+
             _, map_ref  = map_transform_box(map_pts_coord.unsqueeze(0))
             intermediate_map_coords.append(map_pts_coord)
             map_query = map_query.view(map_pts_coord.shape[0], map_pts_coord.shape[1], map_pts_coord.shape[2], self.embed_dims)
