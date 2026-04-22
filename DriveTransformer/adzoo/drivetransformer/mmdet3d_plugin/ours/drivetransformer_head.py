@@ -662,7 +662,18 @@ class DriveTransformerlHead(BaseModule):
         # ego_traj = cat[ego_lcf_feat, ego_his_trajs, ego_fut_cmd] -> [1, 153]
         # ego_query = self.ego_lcf_encoder(ego_traj)  # [1, 768]
         # 替换此处代码
-        ego_query = torch.randn(1, self.embed_dims).to("cuda")
+        # ego_query = torch.randn(1, self.embed_dims).to("cuda")
+        ego_lcf_feat = ego_lcf_feat[..., self.ego_lcf_feat_idx].reshape(bs, -1)
+        ego_his_trajs = ego_his_trajs.reshape(bs, -1)
+        ego_fut_cmd = ego_fut_cmd.reshape(bs, -1)
+
+        ego_traj = torch.cat(
+            [ego_lcf_feat, ego_his_trajs, ego_fut_cmd],
+            dim=-1,
+            )
+
+        ego_query = self.ego_lcf_encoder(ego_traj)
+
 
         ###################################################################
         if len(ego_query.shape) == 2:

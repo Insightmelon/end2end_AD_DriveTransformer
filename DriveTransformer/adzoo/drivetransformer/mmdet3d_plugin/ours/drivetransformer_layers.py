@@ -698,7 +698,8 @@ class DriveTransformerDecoderLayer(BaseModule):
                 # TODO-6 attention mask, ego query 
                 n_agent = agent_query_num
                 n_map = map_query_num
-                n_ego = 1
+                # n_ego = 1
+                n_ego = ego_query.shape[1]
                 total = n_agent + n_map + n_ego
                 # 创建基础掩码（True表示需要mask）
                 mask = torch.ones(total, total, dtype=torch.bool, device=query.device)
@@ -735,9 +736,10 @@ class DriveTransformerDecoderLayer(BaseModule):
                 # project-3
                 # 允许agent, map, ego互相看
                 # 替换此处代码
+                mask[:, :] = False
                 pass
                 ###############################################################
-                mask[ego_range, :] = False
+                # mask[ego_range, :] = False
                 mask = mask.unsqueeze(0)
                 attn_masks[attn_index] = mask
 
@@ -1033,7 +1035,7 @@ class DriveTransformerDecoder(TransformerLayerSequence):
                         map_pts_coord.min().item(), map_pts_coord.max().item())
                     raise RuntimeError("[TODO-7 debug] map_pts_coord invalid in non-refine branch")
             #########################################################################
-
+            
             _, map_ref  = map_transform_box(map_pts_coord.unsqueeze(0))
             intermediate_map_coords.append(map_pts_coord)
             map_query = map_query.view(map_pts_coord.shape[0], map_pts_coord.shape[1], map_pts_coord.shape[2], self.embed_dims)
@@ -1041,28 +1043,61 @@ class DriveTransformerDecoder(TransformerLayerSequence):
             map_cls = map_cls_branches[lid](map_query)
             intermediate_map_class.append(map_cls)
             # planning
-            if self.refine: 
+            #if self.refine: 
                 #####################################################################
                 # project-3
                 # TODO-8 get planning result
                 # 替换此处代码
                 # input = ego_query + ego_pos_embed  # [1, 1, 768]
-                if ego_traj_branches_fix_dist is not None:
+                #if ego_traj_branches_fix_dist is not None:
                     # 替换此处代码
                     # ego_traj_ref_fix_dist_refine = ego_traj_branches_fix_dist[lid](input) # shape: [1, 1, 20] -> [1, 1, 20, 1]
                     # ego_traj_ref_fix_dist = ego_traj_ref_fix_dist_refine + ego_traj_ref_fix_dist
                     # ego_traj_ref_fix_dist: [1, 1, 20, 1]
-                    pass
+                    #pass
                 # 替换此处代码
                 # ego_traj_ref_fix_time_refine = ego_traj_branches_fix_time[lid](input)  # [1, 1, 60] -> [bs, ego_query.shape[1], 30, 2]
                 # ego_traj_ref_fix_time = ego_traj_ref_fix_time_refine + ego_traj_ref_fix_time
                 # ego_traj_ref_fix_time: [1, 1, 30, 2]
-            else:
+            #else:
                 # 替换此处代码
                 # ego_traj_ref_fix_dist = ego_traj_ref_fix_dist_refine
                 # ego_traj_ref_fix_time = ego_traj_ref_fix_time_refine
-                pass
+                #pass
                 ######################################################################
+            # planning
+            #####################################################################
+            # project-3
+            # TODO-8 get planning result
+            if not torch.isfinite(ego_traj_ref_fix_time).all():
+                raise RuntimeError("[TODO-8] ego_traj_ref_fix_time invalid")
+
+            input_feat = ego_query + ego_pos_embed
+
+            if ego_traj_branches_fix_dist is not None:
+                ego_traj_ref_fix_dist_refine = ego_traj_branches_fix_dist[lid](input_feat)
+                ego_traj_ref_fix_dist_refine = ego_traj_ref_fix_dist_refine.unsqueeze(-1)
+
+                if self.refine:
+                    ego_traj_ref_fix_dist = ego_traj_ref_fix_dist_refine + ego_traj_ref_fix_dist
+                else:
+                    ego_traj_ref_fix_dist = ego_traj_ref_fix_dist_refine
+
+            ego_traj_ref_fix_time_refine = ego_traj_branches_fix_time[lid](input_feat)
+            ego_traj_ref_fix_time_refine = ego_traj_ref_fix_time_refine.reshape(
+                ego_query.shape[0],
+                ego_query.shape[1],
+                -1,
+                2,
+            )
+
+            if self.refine:
+                ego_traj_ref_fix_time = ego_traj_ref_fix_time_refine + ego_traj_ref_fix_time
+            else:
+                ego_traj_ref_fix_time = ego_traj_ref_fix_time_refine
+            ######################################################################
+
+
             ego_traj_cls = ego_traj_cls_branches[lid](ego_query + ego_pos_embed) if ego_traj_cls_branches is not None else None
             intermediate_ego_traj_fix_time.append(ego_traj_ref_fix_time)
             intermediate_ego_traj_fix_dist.append(ego_traj_ref_fix_dist)
