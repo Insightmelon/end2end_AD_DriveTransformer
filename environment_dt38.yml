@@ -280,6 +280,7 @@ dependencies:
       - tifffile==2023.7.10
       - tinycss2==1.2.1
       - tomli==2.4.1
+      - --extra-index-url https://download.pytorch.org/whl/cu118
       - torch==2.4.1+cu118
       - torchaudio==2.4.1+cu118
       - torchmetrics==1.5.2

@@ -20,6 +20,7 @@ DT_LARGE_CKPT_URL="${DT_LARGE_CKPT_URL:-https://drive.google.com/file/d/1wAXFWfj
 DT_LARGE_CKPT_PATH="${DT_LARGE_CKPT_PATH:-}"
 RESNET50_CKPT_URL="${RESNET50_CKPT_URL:-https://huggingface.co/rethinklab/Bench2DriveZoo/resolve/main/resnet50-19c8e357.pth}"
 RESNET50_CKPT_PATH="${RESNET50_CKPT_PATH:-}"
+GDOWN_VERSION="${GDOWN_VERSION:-5.2.1}"
 
 if [ "$(id -u)" -eq 0 ]; then
   SUDO=""
@@ -32,8 +33,8 @@ download_to_file() {
   local output_path="$2"
 
   if [[ "$url" == *"drive.google.com"* ]]; then
-    if ! python3 -m gdown --version >/dev/null 2>&1; then
-      python3 -m pip install --upgrade gdown
+    if ! python3 -m gdown --help 2>/dev/null | grep -q -- "--fuzzy"; then
+      python3 -m pip install --upgrade "gdown==${GDOWN_VERSION}"
     fi
     python3 -m gdown --fuzzy "$url" -O "$output_path"
   else
