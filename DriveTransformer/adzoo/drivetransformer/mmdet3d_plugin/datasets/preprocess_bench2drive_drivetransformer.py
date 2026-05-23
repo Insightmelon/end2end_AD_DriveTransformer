@@ -20,12 +20,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 DATAROOT = '../../../../data/bench2drive'
 MAP_ROOT = '../../../../data/bench2drive/maps'
 OUT_DIR = '../../../../data/infos'
-SPLIT_PATH = '../../../../data/split/bench2drive_base_train_val_split.json'
+SPLIT_PATH = '../../../../data/splits/bench2drive_base_train_val_split.json'
 
-DATAROOT = '/home/slxy/zca/code/drivetransformer_private/data/bench2drive'
-MAP_ROOT = '/home/slxy/zca/code/drivetransformer_private/data/bench2drive/maps'
-OUT_DIR = '/home/slxy/zca/code/drivetransformer_private/data/infos'
-SPLIT_PATH = '/home/slxy/zca/code/drivetransformer_private/data/split/bench2drive_base_train_val_split.json'
+DATAROOT = '/workspace/end2end_AD_DriveTransformer/data/bench2drive'
+MAP_ROOT = '/workspace/end2end_AD_DriveTransformer/data/bench2drive/maps'
+OUT_DIR = '/workspace/end2end_AD_DriveTransformer/data/infos'
+SPLIT_PATH = '/workspace/end2end_AD_DriveTransformer/data/splits/bench2drive_base_train_val_split.json'
 
 MAX_DISTANCE = 75              # Filter bounding boxes that are too far from the vehicle
 FILTER_Z_SHRESHOLD = 10        # Filter bounding boxes that are too high/low from the vehicle
