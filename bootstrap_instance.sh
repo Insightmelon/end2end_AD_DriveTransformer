@@ -14,6 +14,8 @@ REPO_REF="${REPO_REF:-main}"
 
 CARLA_ARCHIVE_URL="${CARLA_ARCHIVE_URL:-https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/CARLA_0.9.15.tar.gz}"
 CARLA_ARCHIVE_PATH="${CARLA_ARCHIVE_PATH:-}"
+CARLA_ADDITIONAL_MAPS_URL="${CARLA_ADDITIONAL_MAPS_URL:-https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/AdditionalMaps_0.9.15.tar.gz}"
+CARLA_ADDITIONAL_MAPS_PATH="${CARLA_ADDITIONAL_MAPS_PATH:-}"
 CARLA_DIR="${PROJECT_ROOT}/carla"
 
 DT_LARGE_CKPT_URL="${DT_LARGE_CKPT_URL:-https://drive.google.com/file/d/1wAXFWfjJm0cmP_pmgTkwxTUEs6Zu5j6i/view}"
@@ -57,6 +59,42 @@ run_or_echo() {
   else
     "$@"
   fi
+}
+
+prepare_additional_maps() {
+  local marker_path="$CARLA_DIR/.additional_maps_0.9.15_imported"
+  local maps_archive="$WORKSPACE_ROOT/carla_download/AdditionalMaps_0.9.15.tar.gz"
+
+  if [ -f "$marker_path" ]; then
+    return 0
+  fi
+
+  if [ "$DRY_RUN" -eq 1 ]; then
+    if [ -n "$CARLA_ADDITIONAL_MAPS_PATH" ]; then
+      echo "[dry-run] Would use local CARLA AdditionalMaps archive: $CARLA_ADDITIONAL_MAPS_PATH"
+    else
+      check_url "$CARLA_ADDITIONAL_MAPS_URL"
+      echo "[dry-run] Would download CARLA AdditionalMaps from $CARLA_ADDITIONAL_MAPS_URL"
+    fi
+    echo "[dry-run] Would import CARLA AdditionalMaps in $CARLA_DIR"
+    return 0
+  fi
+
+  if [ ! -x "$CARLA_DIR/ImportAssets.sh" ]; then
+    echo "Warning: CARLA ImportAssets.sh not found or not executable at $CARLA_DIR/ImportAssets.sh. Skipping AdditionalMaps import." >&2
+    return 0
+  fi
+
+  mkdir -p "$CARLA_DIR/Import" "$WORKSPACE_ROOT/carla_download"
+  if [ -n "$CARLA_ADDITIONAL_MAPS_PATH" ] && [ -f "$CARLA_ADDITIONAL_MAPS_PATH" ]; then
+    cp "$CARLA_ADDITIONAL_MAPS_PATH" "$CARLA_DIR/Import/AdditionalMaps_0.9.15.tar.gz"
+  else
+    download_to_file "$CARLA_ADDITIONAL_MAPS_URL" "$maps_archive"
+    cp "$maps_archive" "$CARLA_DIR/Import/AdditionalMaps_0.9.15.tar.gz"
+  fi
+
+  (cd "$CARLA_DIR" && bash ImportAssets.sh)
+  touch "$marker_path"
 }
 
 echo "[1/6] Installing bootstrap tools"
@@ -126,6 +164,8 @@ EOF
     exit 1
   fi
 fi
+
+prepare_additional_maps
 
 echo "[4/6] Preparing checkpoints"
 run_or_echo mkdir -p "$PROJECT_ROOT/DriveTransformer/ckpts"

@@ -41,6 +41,8 @@ Default zero-start asset sources currently assumed by `bootstrap_instance.sh`:
 
 - CARLA 0.9.15:
   `https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/CARLA_0.9.15.tar.gz`
+- CARLA 0.9.15 AdditionalMaps:
+  `https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/AdditionalMaps_0.9.15.tar.gz`
 - `drivetransformer_large.pth`:
   `https://drive.google.com/file/d/1wAXFWfjJm0cmP_pmgTkwxTUEs6Zu5j6i/view`
 - `resnet50-19c8e357.pth`:
@@ -79,12 +81,15 @@ What this script does:
 - installs Miniconda to `/workspace/miniconda3` if needed
 - creates or updates the `dt38` conda environment
 - installs Python dependencies from `requirements_frozen.txt`
+- exports and persists CUDA / GCC / CARLA runtime variables in the `dt38` conda environment
+- installs the local `DriveTransformer` package with `pip install -v -e DriveTransformer`
 - installs Vulkan runtime packages
 - writes `/etc/vulkan/icd.d/my_nvidia_icd.json`
 - registers the CARLA Python `.egg` into the active conda environment through `carla.pth` when the local bundle is present
 - creates a non-root runtime user named `carlauser`
 - grants `carlauser` passwordless `sudo`
 - prepares `/tmp/runtime-carlauser`
+- gives `carlauser` ownership of the project tree so CARLA, checkpoints, result JSON files, and `save_path` outputs are writable at runtime
 
 ### Option B. True zero-start bootstrap
 
@@ -104,6 +109,8 @@ Important:
 
 `bootstrap_instance.sh` already has working default URLs for CARLA and the two required checkpoints. Override them only if you want to use your own mirror, local archive, or private storage.
 
+The bootstrap also downloads CARLA AdditionalMaps and runs `ImportAssets.sh`. A marker file at `carla/.additional_maps_0.9.15_imported` prevents repeated imports on reruns.
+
 Supported variables:
 
 ```bash
@@ -111,10 +118,13 @@ REPO_URL
 REPO_REF
 CARLA_ARCHIVE_PATH
 CARLA_ARCHIVE_URL
+CARLA_ADDITIONAL_MAPS_PATH
+CARLA_ADDITIONAL_MAPS_URL
 DT_LARGE_CKPT_PATH
 DT_LARGE_CKPT_URL
 RESNET50_CKPT_PATH
 RESNET50_CKPT_URL
+TORCH_CUDA_ARCH_LIST
 ```
 
 Default repository source used by `bootstrap_instance.sh`:
@@ -128,6 +138,7 @@ Example:
 
 ```bash
 CARLA_ARCHIVE_PATH=/workspace/assets/carla.tar.gz \
+CARLA_ADDITIONAL_MAPS_PATH=/workspace/assets/AdditionalMaps_0.9.15.tar.gz \
 DT_LARGE_CKPT_PATH=/workspace/assets/drivetransformer_large.pth \
 RESNET50_CKPT_PATH=/workspace/assets/resnet50-19c8e357.pth \
 bash bootstrap_instance.sh
@@ -143,6 +154,31 @@ The setup flow also registers the local CARLA Python egg into the active conda e
 
 ```bash
 echo "$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg" >> YOUR_CONDA_PATH/envs/YOUR_CONDA_ENV_NAME/lib/python3.8/site-packages/carla.pth
+```
+
+The setup flow also writes these runtime/build variables into:
+
+```bash
+/workspace/miniconda3/envs/dt38/etc/conda/activate.d/drivetransformer_env.sh
+```
+
+Default values include:
+
+```bash
+export CUDA_HOME=/workspace/miniconda3/envs/dt38
+export CARLA_ROOT=/workspace/end2end_AD_DriveTransformer/carla
+export FORCE_CUDA=1
+export TORCH_CUDA_ARCH_LIST=8.9
+export VK_ICD_FILENAMES=/etc/vulkan/icd.d/my_nvidia_icd.json
+export XDG_RUNTIME_DIR=/tmp/runtime-carlauser
+```
+
+Override `TORCH_CUDA_ARCH_LIST` before running setup if needed:
+
+```bash
+TORCH_CUDA_ARCH_LIST=8.0 bash setup_instance.sh   # A100
+TORCH_CUDA_ARCH_LIST=8.6 bash setup_instance.sh   # RTX 3090 / A5000 / A6000
+TORCH_CUDA_ARCH_LIST=8.9 bash setup_instance.sh   # RTX 4090 / L40 / Ada
 ```
 
 ### 2. Switch to the runtime user

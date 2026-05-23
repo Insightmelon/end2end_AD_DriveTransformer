@@ -6,6 +6,7 @@ CONDA_ROOT="/workspace/miniconda3"
 ENV_NAME="dt38"
 CARLA_USER="${CARLA_USER:-carlauser}"
 VULKAN_ICD_PATH="/etc/vulkan/icd.d/my_nvidia_icd.json"
+TORCH_CUDA_ARCH_LIST_VALUE="${TORCH_CUDA_ARCH_LIST:-8.9}"
 
 if [ "$(id -u)" -eq 0 ]; then
   SUDO=""
@@ -49,7 +50,6 @@ if ! conda env list | awk '{print $1}' | grep -qx "$ENV_NAME"; then
 else
   conda activate "$ENV_NAME"
   pip install --upgrade pip setuptools wheel
-  pip install -r requirements_frozen.txt
 fi
 
 conda activate "$ENV_NAME"
@@ -57,14 +57,51 @@ conda activate "$ENV_NAME"
 echo "[4/7] Exporting build environment"
 export CC=gcc-9
 export CXX=g++-9
-if command -v nvcc >/dev/null 2>&1; then
-  export CUDA_HOME
-  CUDA_HOME="$(dirname "$(dirname "$(which nvcc)")")"
-  export PATH="$CUDA_HOME/bin:$PATH"
-  export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH:-}"
+export CUDA_HOME
+if ! command -v nvcc >/dev/null 2>&1; then
+  echo "nvcc was not found after activating $ENV_NAME. Check that cuda-toolkit=11.8 is installed in the conda environment." >&2
+  exit 1
 fi
+CUDA_HOME="$(dirname "$(dirname "$(which nvcc)")")"
+export PATH="$CUDA_HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$CUDA_HOME/lib64:${LD_LIBRARY_PATH:-}"
 export PATH="/usr/bin/x86_64-linux-gnu-gcc-9/bin:$PATH"
 export CARLA_ROOT="$PROJECT_ROOT/carla"
+export FORCE_CUDA=1
+export TORCH_CUDA_ARCH_LIST="$TORCH_CUDA_ARCH_LIST_VALUE"
+
+if command -v nvidia-smi >/dev/null 2>&1; then
+  if ! nvidia-smi >/dev/null 2>&1; then
+    cat <<EOF >&2
+nvidia-smi failed. If the instance recently installed NVIDIA or kernel updates,
+reboot the VM before compiling DriveTransformer/mmcv, then rerun this script.
+EOF
+    exit 1
+  fi
+fi
+
+mkdir -p "$CONDA_PREFIX/etc/conda/activate.d"
+cat > "$CONDA_PREFIX/etc/conda/activate.d/drivetransformer_env.sh" <<EOF
+export CC=gcc-9
+export CXX=g++-9
+export CUDA_HOME=$CUDA_HOME
+export PATH=$CUDA_HOME/bin:/usr/bin/x86_64-linux-gnu-gcc-9/bin:\$PATH
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:\${LD_LIBRARY_PATH:-}
+export CARLA_ROOT=$PROJECT_ROOT/carla
+export FORCE_CUDA=1
+export TORCH_CUDA_ARCH_LIST=$TORCH_CUDA_ARCH_LIST_VALUE
+export VK_ICD_FILENAMES=$VULKAN_ICD_PATH
+export XDG_RUNTIME_DIR=/tmp/runtime-$CARLA_USER
+EOF
+
+if [ -f requirements_frozen.txt ]; then
+  REQUIREMENTS_NO_EDITABLE="$(mktemp)"
+  grep -vE '^-e .+#egg=mmcv' requirements_frozen.txt > "$REQUIREMENTS_NO_EDITABLE"
+  pip install -r "$REQUIREMENTS_NO_EDITABLE"
+  rm -f "$REQUIREMENTS_NO_EDITABLE"
+fi
+
+pip install -v -e "$PROJECT_ROOT/DriveTransformer"
 
 echo "Registering CARLA Python egg if present"
 CARLA_EGG_PATH="$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg"
@@ -113,6 +150,19 @@ $SUDO chmod 440 "/etc/sudoers.d/90-${CARLA_USER}"
 $SUDO mkdir -p "/tmp/runtime-${CARLA_USER}"
 $SUDO chown -R "${CARLA_USER}:${CARLA_USER}" "/tmp/runtime-${CARLA_USER}"
 $SUDO chmod 700 "/tmp/runtime-${CARLA_USER}"
+
+echo "Preparing runtime write permissions"
+$SUDO mkdir -p "$PROJECT_ROOT/Bench2Drive/DriveTransformer_b2d_open_loop"
+$SUDO mkdir -p "$PROJECT_ROOT/Bench2Drive/save_path"
+if [ -d "$PROJECT_ROOT" ]; then
+  $SUDO chown -R "${CARLA_USER}:${CARLA_USER}" "$PROJECT_ROOT"
+fi
+if [ -f "$PROJECT_ROOT/carla/CarlaUE4.sh" ]; then
+  $SUDO chmod +x "$PROJECT_ROOT/carla/CarlaUE4.sh"
+fi
+if [ -f "$PROJECT_ROOT/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping" ]; then
+  $SUDO chmod +x "$PROJECT_ROOT/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping"
+fi
 
 echo "[7/7] Quick verification"
 export VK_ICD_FILENAMES="$VULKAN_ICD_PATH"
