@@ -554,6 +554,21 @@ class DriveTransformerlHead(BaseModule):
         
         num_grid_per_dim_map = int(np.sqrt(self.map_reference_points.weight.shape[0]))
         assert num_grid_per_dim_map ** 2 == self.map_reference_points.weight.shape[0]
+        x_coords = torch.linspace(
+            self.pc_range[0],
+            self.pc_range[3],
+            steps=num_grid_per_dim_map,
+            device=self.map_reference_points.weight.device,
+            dtype=self.map_reference_points.weight.dtype,
+        )
+        y_coords = torch.linspace(
+            self.pc_range[1],
+            self.pc_range[4],
+            steps=num_grid_per_dim_map,
+            device=self.map_reference_points.weight.device,
+            dtype=self.map_reference_points.weight.dtype,
+        )
+        x, y = torch.meshgrid(x_coords, y_coords, indexing='xy')
         with torch.no_grad():
             self.map_reference_points.weight[..., 0] = x.flatten()
             self.map_reference_points.weight[..., 1] = y.flatten()
