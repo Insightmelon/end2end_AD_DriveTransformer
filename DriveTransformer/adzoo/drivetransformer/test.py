@@ -16,7 +16,10 @@ from adzoo.drivetransformer.mmdet3d_plugin.datasets.builder import build_dataloa
 import time
 import os.path as osp
 import tqdm
-from adzoo.drivetransformer.mmdet3d_plugin.ours.apis.test import custom_multi_gpu_test
+try:
+    from adzoo.drivetransformer.mmdet3d_plugin.ours.apis.test import custom_multi_gpu_test
+except ModuleNotFoundError:
+    custom_multi_gpu_test = None
 import pickle
 from pyquaternion import Quaternion
 from scipy.interpolate import splprep, splev
@@ -292,7 +295,18 @@ def main():
             model.cuda(),
             device_ids=[torch.cuda.current_device()],
             broadcast_buffers=False)
-        outputs = custom_multi_gpu_test(model, data_loader, args.tmpdir, args.gpu_collect)
+        rank, world_size = get_dist_info()
+        if custom_multi_gpu_test is None:
+            if world_size != 1:
+                raise ModuleNotFoundError(
+                    'custom_multi_gpu_test is required for multi-GPU testing, '
+                    'but adzoo.drivetransformer.mmdet3d_plugin.ours.apis.test '
+                    'is not available.')
+            outputs = single_gpu_test(model, data_loader, args.show,
+                                      args.show_dir)
+        else:
+            outputs = custom_multi_gpu_test(model, data_loader, args.tmpdir,
+                                            args.gpu_collect)
 
     # tmp = {}
     # tmp['bbox_results'] = outputs

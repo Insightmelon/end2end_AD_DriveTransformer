@@ -1,0 +1,72 @@
+{
+    "_checkpoint": {
+        "global_record": {},
+        "progress": [
+            1,
+            10
+        ],
+        "records": [
+            {
+                "index": 0,
+                "route_id": "RouteScenario_3514_rep0",
+                "scenario_name": "ParkingExit_1",
+                "weather_id": "25",
+                "save_name": "RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_23_22_50_18",
+                "status": "Failed - Agent got blocked",
+                "num_infractions": 7,
+                "infractions": {
+                    "collisions_layout": [],
+                    "collisions_pedestrian": [],
+                    "collisions_vehicle": [
+                        "Agent collided against object with type=vehicle.lincoln.mkz_2020 and id=4710 at (x=4738.523, y=3983.421, z=156.236)",
+                        "Agent collided against object with type=vehicle.audi.tt and id=4943 at (x=4722.673, y=3987.881, z=155.926)"
+                    ],
+                    "red_light": [],
+                    "stop_infraction": [],
+                    "outside_route_lanes": [
+                        "Agent went outside its route lanes for about 12.002 meters (54.23% of the completed route)"
+                    ],
+                    "min_speed_infractions": [
+                        "Average speed is 56.87% of the surrounding traffic's one",
+                        "Average speed is 38.01% of the surrounding traffic's one",
+                        "Average speed is 99.74% of the surrounding traffic's one"
+                    ],
+                    "yield_emergency_vehicle_infractions": [],
+                    "scenario_timeouts": [],
+                    "route_dev": [],
+                    "vehicle_blocked": [
+                        "Agent got blocked at (x=4722.627, y=3987.994, z=155.925)"
+                    ],
+                    "route_timeout": []
+                },
+                "scores": {
+                    "score_route": 16.62,
+                    "score_penalty": 0.164763,
+                    "score_composed": 2.738365
+                },
+                "meta": {
+                    "route_length": 133.154,
+                    "duration_game": 68.0,
+                    "duration_system": 1827.693
+                },
+                "town_name": "Town13"
+            }
+        ]
+    },
+    "entry_status": "Started",
+    "eligible": false,
+    "sensors": [
+        "carla_camera",
+        "carla_camera",
+        "carla_camera",
+        "carla_camera",
+        "carla_camera",
+        "carla_camera",
+        "carla_imu",
+        "carla_gnss",
+        "carla_speedometer",
+        "carla_camera"
+    ],
+    "values": [],
+    "labels": []
+}

@@ -2,4 +2,6 @@ carla/
 *.tar.gz
 *.egg
 *.so
-
+*.pth
+DriveTransformer/ckpts/
+DriveTransformer/adzoo/drivetransformer/work_dirs/

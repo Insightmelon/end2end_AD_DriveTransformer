@@ -20,10 +20,10 @@ mkdir -p DriveTransformer_b2d_only_traj
 
 # 执行命令
 $PYTHON $PROGRAM \
-    --routes=/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/data/drivetransformer_bench2drive_dev4.xml \
+    --routes=/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/data/drivetransformer_bench2drive_dev10.xml \
     --repetitions=1 \
     --track=SENSORS \
-    --checkpoint=/workspace/end2end_AD_DriveTransformer/Bench2Drive/DriveTransformer_b2d_only_traj/eval_bench2drive_dev4.json \
+    --checkpoint=/workspace/end2end_AD_DriveTransformer/Bench2Drive/DriveTransformer_b2d_only_traj/eval_bench2drive_dev10_large_pth.json \
     --agent=/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/team_code/drivetransformer_vis_agent.py \
     --agent-config=/workspace/end2end_AD_DriveTransformer/DriveTransformer/adzoo/drivetransformer/configs/drivetransformer/drivetransformer_large.py+/workspace/end2end_AD_DriveTransformer/DriveTransformer/ckpts/drivetransformer_large.pth \
     --debug=0 \

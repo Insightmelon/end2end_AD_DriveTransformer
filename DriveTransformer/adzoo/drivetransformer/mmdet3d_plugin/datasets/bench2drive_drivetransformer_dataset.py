@@ -200,7 +200,10 @@ class B2D_DriveTransformer_Dataset(Custom3DDataset):
             self.current_route_name = self.routes_names[route_idx]
             self.current_route_start_idx = self.divide_nums[route_idx-1] if route_idx>0 else 0
             self.current_route_end_idx =  self.divide_nums[route_idx]     
-            with open(os.path.join('data','infos',self.infos_dir_name,self.current_route_name+'.pkl'),'rb') as f:
+            data_dir = osp.dirname(osp.abspath(self.data_root.rstrip(os.sep)))
+            info_path = osp.join(data_dir, 'infos', self.infos_dir_name,
+                                 self.current_route_name + '.pkl')
+            with open(info_path,'rb') as f:
                 self.current_route_data = pickle.load(f)
             replace_idx = np.argmax(self.visit_time)
             self.cached_route_names[replace_idx] = self.current_route_name
@@ -572,6 +575,19 @@ class B2D_DriveTransformer_Dataset(Custom3DDataset):
             )
         return anns_results
 
+    def evaluate(self, results, *args, **kwargs):
+        if self.use_splited_data:
+            assert isinstance(
+                results, list), f'Expect results to be list, got {type(results)}.'
+            assert len(results) > 0, 'Expect length of results > 0.'
+            assert len(results) == len(self), (
+                f'Expect {len(self)} results, got {len(results)}.')
+            assert isinstance(
+                results[0], dict
+            ), f'Expect elements in results to be dict, got {type(results[0])}.'
+            return dict(num_samples=len(results))
+        return super().evaluate(results, *args, **kwargs)
+
     def __getitem__(self, idx):
         """Get item from infos according to the given index.
         Returns:
@@ -807,5 +823,3 @@ class B2D_DriveTransformer_Dataset(Custom3DDataset):
             "rotate_3d": rotate_3d,
         }
         return aug_config
-
-
