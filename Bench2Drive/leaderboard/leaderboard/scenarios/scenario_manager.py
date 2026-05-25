@@ -14,6 +14,7 @@ from __future__ import print_function
 import signal
 import sys
 import time
+import os
 
 import py_trees
 import carla
@@ -75,6 +76,7 @@ class ScenarioManager(object):
         self._statistics_manager = statistics_manager
 
         self.tick_count = 0
+        self.max_route_ticks = int(os.environ.get("MAX_ROUTE_TICKS", "4000"))
 
         # Use the callback_id inside the signal handler to allow external interrupts
         signal.signal(signal.SIGINT, self.signal_handler)
@@ -179,8 +181,8 @@ class ScenarioManager(object):
             self.tick_count += 1
             self._watchdog.pause()
 
-            if self.tick_count > 4000:
-                raise TickRuntimeError("RuntimeError, tick_count > 4000")
+            if self.max_route_ticks > 0 and self.tick_count > self.max_route_ticks:
+                raise TickRuntimeError(f"RuntimeError, tick_count > {self.max_route_ticks}")
 
             try:
                 self._agent_watchdog.resume()
