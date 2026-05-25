@@ -109,9 +109,9 @@ def create_video(images_folder, output_video, fps, font_scale, text_color, text_
     
     video.release()
 
-root = "/home/slxy/zca/code/Bench2Drive/save_path/"
+root = "/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/"
 
-case_name = "drivetransformer_bench2drive_dev10_RouteScenario_2091_rep0_Town12_NonSignalizedJunctionLeftTurn_1_5_12_21_20_13_02"
+case_name = "drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17"
 
 images_folder = os.path.join(root, case_name)
 output_video = os.path.join(images_folder, 'demo.mp4')

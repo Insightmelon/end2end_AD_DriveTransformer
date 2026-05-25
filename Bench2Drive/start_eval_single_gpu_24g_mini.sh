@@ -11,16 +11,16 @@ export XDG_RUNTIME_DIR="/tmp/runtime-carlauser"
 export VK_ICD_FILENAMES="/etc/vulkan/icd.d/my_nvidia_icd.json"
 mkdir -p "$XDG_RUNTIME_DIR"
 
-PYTHON="/workspace/miniconda3/envs/dt38/bin/python"
+PYTHON="${PYTHON:-/workspace/miniconda3/envs/dt38/bin/python}"
 PROGRAM="leaderboard/leaderboard/leaderboard_evaluator.py"
 
-CONFIG="/workspace/end2end_AD_DriveTransformer/DriveTransformer/adzoo/drivetransformer/configs/drivetransformer/drivetransformer_single_gpu_24g.py"
-DEFAULT_CKPT="/workspace/end2end_AD_DriveTransformer/DriveTransformer/adzoo/drivetransformer/work_dirs/drivetransformer/drivetransformer_single_gpu_24g/latest.pth"
+CONFIG="${CONFIG:-/workspace/end2end_AD_DriveTransformer/DriveTransformer/adzoo/drivetransformer/configs/drivetransformer/drivetransformer_large_single_gpu_24g_30epoch.py}"
+DEFAULT_CKPT="/workspace/end2end_AD_DriveTransformer/DriveTransformer/adzoo/drivetransformer/work_dirs/drivetransformer/drivetransformer_large_single_gpu_24g_30epoch/latest.pth"
 CKPT="${CKPT:-$DEFAULT_CKPT}"
 
 ROUTES="${ROUTES:-/workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/data/drivetransformer_bench2drive_dev10.xml}"
-RESULT_DIR="/workspace/end2end_AD_DriveTransformer/Bench2Drive/DriveTransformer_b2d_single_gpu_24g_mini"
-RESULT_JSON="${RESULT_JSON:-$RESULT_DIR/eval_single_gpu_24g_mini_dev10.json}"
+RESULT_DIR="${RESULT_DIR:-/workspace/end2end_AD_DriveTransformer/Bench2Drive/DriveTransformer_b2d_large_single_gpu_24g_30epoch_dev10}"
+RESULT_JSON="${RESULT_JSON:-$RESULT_DIR/eval_large_single_gpu_24g_30epoch_dev10.json}"
 
 cd /workspace/end2end_AD_DriveTransformer/Bench2Drive
 mkdir -p "$RESULT_DIR"
