@@ -139,6 +139,8 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
         self.prev_control_cache = []
         self.prev_control_list = []
         self.step_time_avg = []
+        self.debug_max_save_frames = int(os.environ.get('DEBUG_MAX_SAVE_FRAMES', '0'))
+        self.bbox_vis_score_thr = float(os.environ.get('BBOX_VIS_SCORE_THR', '0.3'))
         if SAVE_PATH is not None:
             now = datetime.datetime.now()
             string = pathlib.Path(os.environ['ROUTES']).stem + '_'
@@ -535,12 +537,54 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
             steer, throttle, brake = self.controller.step(ego_traj_fix_time, ego_traj_fix_dist, tick_data['speed'])
         
         control = carla.VehicleControl(steer=float(steer), throttle=float(throttle), brake=float(brake))
+        desired_speed = float(np.linalg.norm(ego_traj_fix_time[10] - ego_traj_fix_time[5]) * 2.0)
         self.pid_metadata['steer'] = control.steer
         self.pid_metadata['throttle'] = control.throttle
         self.pid_metadata['brake'] = control.brake
         self.pid_metadata['speed'] = float(tick_data['speed'])
+        self.pid_metadata['step'] = int(self.step)
+        self.pid_metadata['frame'] = int(self.step // 2)
+        self.pid_metadata['desired_speed'] = desired_speed
+        self.pid_metadata['selected_mode'] = int(selected_mode)
+        self.pid_metadata['command_far'] = int(tick_data['command_far'])
+        self.pid_metadata['command_near'] = int(tick_data['command_near'])
+        self.pid_metadata['command_far_xy'] = np.asarray(tick_data['command_far_xy']).astype(float).tolist()
+        self.pid_metadata['command_near_xy'] = np.asarray(tick_data['command_near_xy']).astype(float).tolist()
+        self.pid_metadata['local_command_far_xy'] = local_command_far_xy.astype(float).tolist()
+        self.pid_metadata['local_command_near_xy'] = local_command_near_xy.astype(float).tolist()
+        self.pid_metadata['ego_fut_cmd_far_onehot'] = command[0:6].astype(float).tolist()
+        self.pid_metadata['ego_fut_cmd_near_onehot'] = command[70:76].astype(float).tolist()
+        self.pid_metadata['ego_traj_fix_dist'] = ego_traj_fix_dist.astype(float).tolist()
+        self.pid_metadata['ego_traj_fix_dist_angles'] = angles.astype(float).tolist()
+        self.pid_metadata['ego_traj_fix_time'] = ego_traj_fix_time.astype(float).tolist()
+        self.pid_metadata['ego_traj_fix_time_bev'] = ego_traj_fix_time[:, [1, 0]].astype(float).tolist()
+        self.pid_metadata['fix_time_delta_5_10'] = (ego_traj_fix_time[10] - ego_traj_fix_time[5]).astype(float).tolist()
+        self.pid_metadata['fix_time_endpoint'] = ego_traj_fix_time[-1].astype(float).tolist()
+        self.pid_metadata['fix_dist_endpoint'] = ego_traj_fix_dist[-1].astype(float).tolist()
+        if len(output_data_batch) > 0 and 'scores_3d' in output_data_batch[0]:
+            bbox_scores = output_data_batch[0]['scores_3d']
+            bbox_labels = output_data_batch[0].get('labels_3d', None)
+            if isinstance(bbox_scores, torch.Tensor):
+                bbox_scores = bbox_scores.detach().float().cpu().numpy()
+            else:
+                bbox_scores = np.asarray(bbox_scores, dtype=np.float32)
+            self.pid_metadata['num_boxes_total'] = int(len(bbox_scores))
+            self.pid_metadata['num_boxes_score_ge_0_05'] = int((bbox_scores >= 0.05).sum())
+            self.pid_metadata['num_boxes_score_ge_0_1'] = int((bbox_scores >= 0.1).sum())
+            self.pid_metadata['num_boxes_score_ge_0_2'] = int((bbox_scores >= 0.2).sum())
+            self.pid_metadata['num_boxes_score_ge_0_3'] = int((bbox_scores >= 0.3).sum())
+            top_bbox_idx = np.argsort(bbox_scores)[::-1][:10]
+            self.pid_metadata['top_box_scores'] = bbox_scores[top_bbox_idx].astype(float).tolist()
+            if bbox_labels is not None:
+                if isinstance(bbox_labels, torch.Tensor):
+                    bbox_labels = bbox_labels.detach().cpu().numpy()
+                else:
+                    bbox_labels = np.asarray(bbox_labels)
+                self.pid_metadata['top_box_labels'] = bbox_labels[top_bbox_idx].astype(int).tolist()
         #if SAVE_PATH is not None and self.step % 10 == 0:
         self.save(tick_data, ego_traj_fix_time[:,[1,0]].copy(), output_data_batch)
+        if self.debug_max_save_frames > 0 and self.step // 2 + 1 >= self.debug_max_save_frames:
+            raise RuntimeError(f"DEBUG_MAX_SAVE_FRAMES reached: {self.debug_max_save_frames}")
         
         self.prev_control = control
         if len(self.prev_control_cache)==2:
@@ -750,7 +794,9 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
 
         return img
     
-    def draw_lidar_bbox3d_on_img(self,bboxes3d,raw_img,lidar2img_rt,canvas_size=(900,1600),img_metas=None,scores=None,labels=None,trajs=None,color=(0, 255, 0),thickness=1):
+    def draw_lidar_bbox3d_on_img(self,bboxes3d,raw_img,lidar2img_rt,canvas_size=(900,1600),img_metas=None,scores=None,labels=None,trajs=None,color=(0, 255, 0),thickness=1,score_thr=None):
+        if score_thr is None:
+            score_thr = self.bbox_vis_score_thr
         img = raw_img.copy()
         bboxes3d_numpy = bboxes3d.tensor.cpu().numpy()
         if len(bboxes3d_numpy) == 0:
@@ -788,7 +834,7 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
         mask2 = (imgfov_pts_2d.reshape(num_bbox,16).max(axis=-1) - imgfov_pts_2d.reshape(num_bbox,16).min(axis=-1))< 2000
         mask = mask1 & mask2
         if scores is not None:
-            mask3 = (scores>=0.3)
+            mask3 = (scores >= score_thr)
             mask = mask & mask3
             
         if not mask.any():
@@ -814,12 +860,12 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
                         else:
                             img = self.draw_traj_bev(traj1,img,hue_start=0,hue_end=20)
 
-        return self.plot_rect3d_on_img(img, num_bbox, imgfov_pts_2d, scores, labels, color, thickness,bev=(canvas_size!=(900,1600))) 
+        return self.plot_rect3d_on_img(img, num_bbox, imgfov_pts_2d, scores, labels, color, thickness,bev=(canvas_size!=(900,1600)),score_thr=score_thr)
     
     
 
     
-    def plot_rect3d_on_img(self,img,num_rects,rect_corners,scores=None,labels=None,color=(0, 255, 0),thickness=1,bev=False):
+    def plot_rect3d_on_img(self,img,num_rects,rect_corners,scores=None,labels=None,color=(0, 255, 0),thickness=1,bev=False,score_thr=0.3):
         line_indices = ((0, 1), (0, 3), (0, 4), (1, 2), (1, 5), (3, 2), (3, 7),
                         (4, 5), (4, 7), (2, 6), (5, 6), (6, 7))
         if bev:
@@ -830,7 +876,7 @@ class DriveTransformerAgent(autonomous_agent.AutonomousAgent):
             corners = rect_corners[i].astype(np.int)
             # if scores is not None:
             #     cv2.putText(img, "{:.2f}".format(scores[i]), corners[0], cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0,0,0), 1)
-            if scores[i] < 0.3:
+            if scores[i] < score_thr:
                 continue
                 #     c=(255,255,255)
                 #     thinck=1
