@@ -1,0 +1,1382 @@
+USING agent_wrapper: /workspace/end2end_AD_DriveTransformer/Bench2Drive/leaderboard/leaderboard/autoagents/agent_wrapper.py
+/workspace/end2end_AD_DriveTransformer/carla/CarlaUE4.sh -RenderOffScreen -nosound -carla-rpc-port=30001 -graphicsadapter=0 None
+load_world success , attempts=0
+traffic_manager init success, try_time=0
+
+[1m========= Preparing RouteScenario_3514 (repetition 0) =========[0m
+[1m> Loading the world[0m
+4.26.2-0+++UE4+Release-4.26 522 0
+Disabling core dumps.
+WARNING: Traffic sign 22181 overlaps a driving lane. Disabling collision... 
+[1m> Setting up the agent[0m
+adzoo.drivetransformer.mmdet3d_plugin
+No apex.normalization!!!!
+<All keys matched successfully>
+SAVE Result to  drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+[1m> Running the route[0m
+=== [Agent] -- Wallclock = 2026-05-25 19:59:37.019 -- System time = 0.000 -- Game time = 0.050 -- Ratio = 0.000x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:39.843 -- System time = 2.823 -- Game time = 0.100 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:40.191 -- System time = 3.171 -- Game time = 0.150 -- Ratio = 0.047x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:42.377 -- System time = 5.357 -- Game time = 0.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:42.617 -- System time = 5.598 -- Game time = 0.250 -- Ratio = 0.045x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:44.772 -- System time = 7.753 -- Game time = 0.300 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:45.025 -- System time = 8.006 -- Game time = 0.350 -- Ratio = 0.044x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:47.195 -- System time = 10.175 -- Game time = 0.400 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:47.413 -- System time = 10.394 -- Game time = 0.450 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:49.503 -- System time = 12.484 -- Game time = 0.500 -- Ratio = 0.040x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:49.737 -- System time = 12.718 -- Game time = 0.550 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:51.859 -- System time = 14.840 -- Game time = 0.600 -- Ratio = 0.040x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:52.105 -- System time = 15.086 -- Game time = 0.650 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:54.208 -- System time = 17.188 -- Game time = 0.700 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:54.438 -- System time = 17.418 -- Game time = 0.750 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:56.552 -- System time = 19.532 -- Game time = 0.800 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:56.775 -- System time = 19.756 -- Game time = 0.850 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 19:59:58.885 -- System time = 21.866 -- Game time = 0.900 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 19:59:59.106 -- System time = 22.087 -- Game time = 0.950 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:01.241 -- System time = 24.221 -- Game time = 1.000 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:01.466 -- System time = 24.447 -- Game time = 1.050 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:03.625 -- System time = 26.605 -- Game time = 1.100 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:03.837 -- System time = 26.818 -- Game time = 1.150 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:05.933 -- System time = 28.914 -- Game time = 1.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:06.146 -- System time = 29.126 -- Game time = 1.250 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:08.278 -- System time = 31.258 -- Game time = 1.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:08.494 -- System time = 31.475 -- Game time = 1.350 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:10.650 -- System time = 33.631 -- Game time = 1.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:10.882 -- System time = 33.863 -- Game time = 1.450 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:12.982 -- System time = 35.963 -- Game time = 1.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:13.203 -- System time = 36.184 -- Game time = 1.550 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:15.356 -- System time = 38.337 -- Game time = 1.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:15.569 -- System time = 38.550 -- Game time = 1.650 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:17.737 -- System time = 40.718 -- Game time = 1.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:17.990 -- System time = 40.971 -- Game time = 1.750 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:20.172 -- System time = 43.153 -- Game time = 1.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:20.410 -- System time = 43.390 -- Game time = 1.850 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:22.565 -- System time = 45.546 -- Game time = 1.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:22.797 -- System time = 45.778 -- Game time = 1.950 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:24.937 -- System time = 47.918 -- Game time = 2.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:25.193 -- System time = 48.173 -- Game time = 2.050 -- Ratio = 0.043x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:27.391 -- System time = 50.372 -- Game time = 2.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:27.652 -- System time = 50.633 -- Game time = 2.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:29.916 -- System time = 52.896 -- Game time = 2.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:30.150 -- System time = 53.131 -- Game time = 2.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:32.374 -- System time = 55.355 -- Game time = 2.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:32.597 -- System time = 55.578 -- Game time = 2.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:34.833 -- System time = 57.813 -- Game time = 2.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:35.078 -- System time = 58.058 -- Game time = 2.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:37.442 -- System time = 60.423 -- Game time = 2.500 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:37.704 -- System time = 60.684 -- Game time = 2.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:40.043 -- System time = 63.024 -- Game time = 2.600 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:40.260 -- System time = 63.240 -- Game time = 2.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:42.457 -- System time = 65.438 -- Game time = 2.700 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:42.673 -- System time = 65.654 -- Game time = 2.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:44.875 -- System time = 67.856 -- Game time = 2.800 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:45.114 -- System time = 68.094 -- Game time = 2.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:47.320 -- System time = 70.301 -- Game time = 2.900 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:47.550 -- System time = 70.531 -- Game time = 2.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:49.743 -- System time = 72.724 -- Game time = 3.000 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:49.972 -- System time = 72.952 -- Game time = 3.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:52.169 -- System time = 75.150 -- Game time = 3.100 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:52.394 -- System time = 75.375 -- Game time = 3.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:54.611 -- System time = 77.592 -- Game time = 3.200 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:54.832 -- System time = 77.812 -- Game time = 3.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:57.040 -- System time = 80.020 -- Game time = 3.300 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:57.256 -- System time = 80.237 -- Game time = 3.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:00:59.459 -- System time = 82.440 -- Game time = 3.400 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:00:59.713 -- System time = 82.693 -- Game time = 3.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:01.932 -- System time = 84.913 -- Game time = 3.500 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:02.182 -- System time = 85.163 -- Game time = 3.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:04.427 -- System time = 87.407 -- Game time = 3.600 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:04.668 -- System time = 87.648 -- Game time = 3.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:06.833 -- System time = 89.814 -- Game time = 3.700 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:07.062 -- System time = 90.043 -- Game time = 3.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:09.186 -- System time = 92.166 -- Game time = 3.800 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:09.419 -- System time = 92.399 -- Game time = 3.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:11.526 -- System time = 94.507 -- Game time = 3.900 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:11.747 -- System time = 94.728 -- Game time = 3.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:13.865 -- System time = 96.846 -- Game time = 4.000 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:14.108 -- System time = 97.089 -- Game time = 4.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:16.222 -- System time = 99.202 -- Game time = 4.100 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:16.452 -- System time = 99.433 -- Game time = 4.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:18.570 -- System time = 101.550 -- Game time = 4.200 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:18.803 -- System time = 101.784 -- Game time = 4.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:20.924 -- System time = 103.904 -- Game time = 4.300 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:21.187 -- System time = 104.167 -- Game time = 4.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:23.329 -- System time = 106.309 -- Game time = 4.400 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:23.574 -- System time = 106.555 -- Game time = 4.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:25.710 -- System time = 108.690 -- Game time = 4.500 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:25.962 -- System time = 108.942 -- Game time = 4.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:28.081 -- System time = 111.061 -- Game time = 4.600 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:28.338 -- System time = 111.319 -- Game time = 4.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:30.474 -- System time = 113.455 -- Game time = 4.700 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:30.728 -- System time = 113.709 -- Game time = 4.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:32.876 -- System time = 115.857 -- Game time = 4.800 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:33.112 -- System time = 116.093 -- Game time = 4.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:35.251 -- System time = 118.232 -- Game time = 4.900 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:35.474 -- System time = 118.455 -- Game time = 4.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:37.593 -- System time = 120.574 -- Game time = 5.000 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:37.836 -- System time = 120.817 -- Game time = 5.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:39.953 -- System time = 122.934 -- Game time = 5.100 -- Ratio = 0.041x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:40.179 -- System time = 123.160 -- Game time = 5.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:42.287 -- System time = 125.267 -- Game time = 5.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:42.524 -- System time = 125.504 -- Game time = 5.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:44.617 -- System time = 127.598 -- Game time = 5.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:44.872 -- System time = 127.853 -- Game time = 5.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:47.001 -- System time = 129.982 -- Game time = 5.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:47.228 -- System time = 130.209 -- Game time = 5.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:49.335 -- System time = 132.316 -- Game time = 5.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:49.577 -- System time = 132.557 -- Game time = 5.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:51.673 -- System time = 134.654 -- Game time = 5.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:51.885 -- System time = 134.866 -- Game time = 5.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:53.988 -- System time = 136.969 -- Game time = 5.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:54.205 -- System time = 137.186 -- Game time = 5.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:56.313 -- System time = 139.294 -- Game time = 5.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:56.540 -- System time = 139.521 -- Game time = 5.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:01:58.652 -- System time = 141.633 -- Game time = 5.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:01:58.887 -- System time = 141.867 -- Game time = 5.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:00.991 -- System time = 143.972 -- Game time = 6.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:01.233 -- System time = 144.214 -- Game time = 6.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:03.354 -- System time = 146.334 -- Game time = 6.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:03.584 -- System time = 146.565 -- Game time = 6.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:05.695 -- System time = 148.676 -- Game time = 6.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:05.938 -- System time = 148.918 -- Game time = 6.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:08.072 -- System time = 151.052 -- Game time = 6.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:08.299 -- System time = 151.280 -- Game time = 6.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:10.408 -- System time = 153.389 -- Game time = 6.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:10.634 -- System time = 153.614 -- Game time = 6.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:12.788 -- System time = 155.769 -- Game time = 6.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:13.035 -- System time = 156.015 -- Game time = 6.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:15.116 -- System time = 158.097 -- Game time = 6.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:15.329 -- System time = 158.309 -- Game time = 6.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:17.444 -- System time = 160.425 -- Game time = 6.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:17.687 -- System time = 160.668 -- Game time = 6.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:19.799 -- System time = 162.780 -- Game time = 6.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:20.029 -- System time = 163.010 -- Game time = 6.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:22.158 -- System time = 165.139 -- Game time = 6.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:22.371 -- System time = 165.352 -- Game time = 6.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:24.500 -- System time = 167.481 -- Game time = 7.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:24.745 -- System time = 167.726 -- Game time = 7.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:26.860 -- System time = 169.840 -- Game time = 7.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:27.094 -- System time = 170.075 -- Game time = 7.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:29.226 -- System time = 172.206 -- Game time = 7.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:29.442 -- System time = 172.423 -- Game time = 7.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:31.547 -- System time = 174.528 -- Game time = 7.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:31.762 -- System time = 174.743 -- Game time = 7.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:33.875 -- System time = 176.855 -- Game time = 7.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:34.090 -- System time = 177.071 -- Game time = 7.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:36.211 -- System time = 179.192 -- Game time = 7.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:36.453 -- System time = 179.434 -- Game time = 7.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:38.559 -- System time = 181.540 -- Game time = 7.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:38.779 -- System time = 181.760 -- Game time = 7.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:40.898 -- System time = 183.879 -- Game time = 7.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:41.124 -- System time = 184.105 -- Game time = 7.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:43.274 -- System time = 186.255 -- Game time = 7.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:43.499 -- System time = 186.479 -- Game time = 7.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:45.663 -- System time = 188.644 -- Game time = 7.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:45.902 -- System time = 188.883 -- Game time = 7.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:48.038 -- System time = 191.019 -- Game time = 8.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:48.265 -- System time = 191.245 -- Game time = 8.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:50.388 -- System time = 193.369 -- Game time = 8.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:50.621 -- System time = 193.602 -- Game time = 8.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:52.758 -- System time = 195.738 -- Game time = 8.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:53.006 -- System time = 195.987 -- Game time = 8.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:55.147 -- System time = 198.128 -- Game time = 8.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:55.392 -- System time = 198.372 -- Game time = 8.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:57.543 -- System time = 200.523 -- Game time = 8.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:02:57.783 -- System time = 200.764 -- Game time = 8.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:02:59.986 -- System time = 202.967 -- Game time = 8.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:00.216 -- System time = 203.196 -- Game time = 8.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:02.358 -- System time = 205.338 -- Game time = 8.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:02.597 -- System time = 205.577 -- Game time = 8.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:04.741 -- System time = 207.722 -- Game time = 8.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:05.002 -- System time = 207.983 -- Game time = 8.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:07.142 -- System time = 210.123 -- Game time = 8.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:07.369 -- System time = 210.350 -- Game time = 8.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:09.575 -- System time = 212.556 -- Game time = 8.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:09.822 -- System time = 212.803 -- Game time = 8.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:12.041 -- System time = 215.022 -- Game time = 9.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:12.294 -- System time = 215.274 -- Game time = 9.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:14.436 -- System time = 217.416 -- Game time = 9.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:14.674 -- System time = 217.654 -- Game time = 9.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:16.799 -- System time = 219.779 -- Game time = 9.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:17.037 -- System time = 220.018 -- Game time = 9.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:19.143 -- System time = 222.124 -- Game time = 9.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:19.374 -- System time = 222.355 -- Game time = 9.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:21.489 -- System time = 224.469 -- Game time = 9.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:21.716 -- System time = 224.696 -- Game time = 9.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:23.888 -- System time = 226.868 -- Game time = 9.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:24.140 -- System time = 227.121 -- Game time = 9.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:26.299 -- System time = 229.279 -- Game time = 9.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:26.551 -- System time = 229.531 -- Game time = 9.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:28.731 -- System time = 231.712 -- Game time = 9.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:28.954 -- System time = 231.934 -- Game time = 9.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:31.082 -- System time = 234.063 -- Game time = 9.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:31.310 -- System time = 234.291 -- Game time = 9.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:33.449 -- System time = 236.430 -- Game time = 9.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:33.702 -- System time = 236.682 -- Game time = 9.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:35.826 -- System time = 238.807 -- Game time = 10.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:36.039 -- System time = 239.020 -- Game time = 10.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:38.170 -- System time = 241.151 -- Game time = 10.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:38.395 -- System time = 241.376 -- Game time = 10.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:40.521 -- System time = 243.501 -- Game time = 10.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:40.739 -- System time = 243.719 -- Game time = 10.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:42.836 -- System time = 245.817 -- Game time = 10.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:43.058 -- System time = 246.039 -- Game time = 10.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:45.171 -- System time = 248.152 -- Game time = 10.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:45.388 -- System time = 248.369 -- Game time = 10.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:47.504 -- System time = 250.485 -- Game time = 10.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:47.726 -- System time = 250.706 -- Game time = 10.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:49.834 -- System time = 252.815 -- Game time = 10.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:50.068 -- System time = 253.048 -- Game time = 10.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:52.175 -- System time = 255.155 -- Game time = 10.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:52.381 -- System time = 255.361 -- Game time = 10.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:54.482 -- System time = 257.463 -- Game time = 10.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:54.689 -- System time = 257.670 -- Game time = 10.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:56.781 -- System time = 259.761 -- Game time = 10.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:56.993 -- System time = 259.974 -- Game time = 10.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:03:59.111 -- System time = 262.091 -- Game time = 11.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:03:59.331 -- System time = 262.311 -- Game time = 11.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:01.470 -- System time = 264.450 -- Game time = 11.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:01.689 -- System time = 264.670 -- Game time = 11.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:03.831 -- System time = 266.812 -- Game time = 11.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:04.054 -- System time = 267.035 -- Game time = 11.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:06.198 -- System time = 269.178 -- Game time = 11.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:06.426 -- System time = 269.406 -- Game time = 11.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:08.537 -- System time = 271.517 -- Game time = 11.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:08.747 -- System time = 271.728 -- Game time = 11.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:10.875 -- System time = 273.856 -- Game time = 11.500 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:11.087 -- System time = 274.068 -- Game time = 11.550 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:13.206 -- System time = 276.187 -- Game time = 11.600 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:13.433 -- System time = 276.413 -- Game time = 11.650 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:15.534 -- System time = 278.515 -- Game time = 11.700 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:15.748 -- System time = 278.729 -- Game time = 11.750 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:17.878 -- System time = 280.859 -- Game time = 11.800 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:18.091 -- System time = 281.071 -- Game time = 11.850 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:20.233 -- System time = 283.213 -- Game time = 11.900 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:20.449 -- System time = 283.429 -- Game time = 11.950 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:22.593 -- System time = 285.573 -- Game time = 12.000 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:22.814 -- System time = 285.795 -- Game time = 12.050 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:24.916 -- System time = 287.897 -- Game time = 12.100 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:25.133 -- System time = 288.114 -- Game time = 12.150 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:27.256 -- System time = 290.237 -- Game time = 12.200 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:27.470 -- System time = 290.450 -- Game time = 12.250 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:29.588 -- System time = 292.568 -- Game time = 12.300 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:29.823 -- System time = 292.804 -- Game time = 12.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:31.941 -- System time = 294.922 -- Game time = 12.400 -- Ratio = 0.042x
+=== [Agent] -- Wallclock = 2026-05-25 20:04:32.172 -- System time = 295.152 -- Game time = 12.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3514_rep0_Town13_ParkingExit_1_25_05_25_19_58_17
+=== [Agent] -- Wallclock = 2026-05-25 20:04:34.314 -- System time = 297.294 -- Game time = 12.500 -- Ratio = 0.042x
+[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_3514 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═══════════════════════╤═════════════════════╕
+│ Start Time            │ 2026-05-25 19:59:36 │
+├───────────────────────┼─────────────────────┤
+│ End Time              │ 2026-05-25 20:04:35 │
+├───────────────────────┼─────────────────────┤
+│ System Time           │ 298.75s             │
+├───────────────────────┼─────────────────────┤
+│ Game Time             │ 12.55s              │
+├───────────────────────┼─────────────────────┤
+│ Ratio (Game / System) │ 0.042               │
+╘═══════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤═════════╕
+│ Criterion             │ Result  │ Value   │
+├───────────────────────┼─────────┼─────────┤
+│ RouteCompletionTest   │ [91mFAILURE[0m │ 6.1 %   │
+├───────────────────────┼─────────┼─────────┤
+│ OutsideRouteLanesTest │ [91mFAILURE[0m │ 49.22 % │
+├───────────────────────┼─────────┼─────────┤
+│ CollisionTest         │ [91mFAILURE[0m │ 1 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningRedLightTest   │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ MinSpeedTest          │ [91mFAILURE[0m │ 50.91 % │
+├───────────────────────┼─────────┼─────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ ScenarioTimeoutTest   │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ Timeout               │ [92mSUCCESS[0m │         │
+╘═══════════════════════╧═════════╧═════════╛
+
+[1m> Registering the route statistics[0m
+False
+
+[1m========= Preparing RouteScenario_3255 (repetition 0) =========[0m
+[1m> Loading the world[0m
+WARNING: Traffic sign 22181 overlaps a driving lane. Disabling collision... 
+[1m> Setting up the agent[0m
+adzoo.drivetransformer.mmdet3d_plugin
+<All keys matched successfully>
+SAVE Result to  drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+[1m> Running the route[0m
+=== [Agent] -- Wallclock = 2026-05-25 20:05:56.110 -- System time = 0.000 -- Game time = 0.050 -- Ratio = 0.000x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:05:58.785 -- System time = 2.675 -- Game time = 0.100 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:05:59.046 -- System time = 2.936 -- Game time = 0.150 -- Ratio = 0.051x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:01.530 -- System time = 5.420 -- Game time = 0.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:01.771 -- System time = 5.661 -- Game time = 0.250 -- Ratio = 0.044x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:04.229 -- System time = 8.119 -- Game time = 0.300 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:04.490 -- System time = 8.380 -- Game time = 0.350 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:06.940 -- System time = 10.830 -- Game time = 0.400 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:07.182 -- System time = 11.072 -- Game time = 0.450 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:09.603 -- System time = 13.493 -- Game time = 0.500 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:09.858 -- System time = 13.748 -- Game time = 0.550 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:12.313 -- System time = 16.203 -- Game time = 0.600 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:12.533 -- System time = 16.423 -- Game time = 0.650 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:14.977 -- System time = 18.867 -- Game time = 0.700 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:15.208 -- System time = 19.098 -- Game time = 0.750 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:17.643 -- System time = 21.533 -- Game time = 0.800 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:17.913 -- System time = 21.803 -- Game time = 0.850 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:20.383 -- System time = 24.273 -- Game time = 0.900 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:20.609 -- System time = 24.499 -- Game time = 0.950 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:23.074 -- System time = 26.964 -- Game time = 1.000 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:23.310 -- System time = 27.200 -- Game time = 1.050 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:25.745 -- System time = 29.635 -- Game time = 1.100 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:25.972 -- System time = 29.862 -- Game time = 1.150 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:28.406 -- System time = 32.296 -- Game time = 1.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:28.621 -- System time = 32.511 -- Game time = 1.250 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:31.059 -- System time = 34.949 -- Game time = 1.300 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:31.289 -- System time = 35.179 -- Game time = 1.350 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:33.745 -- System time = 37.635 -- Game time = 1.400 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:33.957 -- System time = 37.847 -- Game time = 1.450 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:36.410 -- System time = 40.300 -- Game time = 1.500 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:36.646 -- System time = 40.536 -- Game time = 1.550 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:39.086 -- System time = 42.976 -- Game time = 1.600 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:39.336 -- System time = 43.226 -- Game time = 1.650 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:41.774 -- System time = 45.663 -- Game time = 1.700 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:42.009 -- System time = 45.899 -- Game time = 1.750 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:44.504 -- System time = 48.394 -- Game time = 1.800 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:44.733 -- System time = 48.623 -- Game time = 1.850 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:47.209 -- System time = 51.099 -- Game time = 1.900 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:47.430 -- System time = 51.320 -- Game time = 1.950 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:49.913 -- System time = 53.803 -- Game time = 2.000 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:50.169 -- System time = 54.059 -- Game time = 2.050 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:52.655 -- System time = 56.545 -- Game time = 2.100 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:52.858 -- System time = 56.748 -- Game time = 2.150 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:55.322 -- System time = 59.212 -- Game time = 2.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:55.525 -- System time = 59.415 -- Game time = 2.250 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:06:58.024 -- System time = 61.914 -- Game time = 2.300 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:06:58.238 -- System time = 62.128 -- Game time = 2.350 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:00.756 -- System time = 64.646 -- Game time = 2.400 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:00.980 -- System time = 64.870 -- Game time = 2.450 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:03.524 -- System time = 67.414 -- Game time = 2.500 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:03.746 -- System time = 67.636 -- Game time = 2.550 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:06.287 -- System time = 70.177 -- Game time = 2.600 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:06.493 -- System time = 70.383 -- Game time = 2.650 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:09.025 -- System time = 72.915 -- Game time = 2.700 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:09.239 -- System time = 73.129 -- Game time = 2.750 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:11.759 -- System time = 75.649 -- Game time = 2.800 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:11.990 -- System time = 75.880 -- Game time = 2.850 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:14.535 -- System time = 78.425 -- Game time = 2.900 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:14.759 -- System time = 78.649 -- Game time = 2.950 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:17.276 -- System time = 81.166 -- Game time = 3.000 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:17.509 -- System time = 81.399 -- Game time = 3.050 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:20.010 -- System time = 83.900 -- Game time = 3.100 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:20.233 -- System time = 84.123 -- Game time = 3.150 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:22.783 -- System time = 86.673 -- Game time = 3.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:23.005 -- System time = 86.895 -- Game time = 3.250 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:25.562 -- System time = 89.452 -- Game time = 3.300 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:25.777 -- System time = 89.667 -- Game time = 3.350 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:28.305 -- System time = 92.195 -- Game time = 3.400 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:28.538 -- System time = 92.428 -- Game time = 3.450 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:31.143 -- System time = 95.033 -- Game time = 3.500 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:31.371 -- System time = 95.261 -- Game time = 3.550 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:33.986 -- System time = 97.876 -- Game time = 3.600 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:34.207 -- System time = 98.097 -- Game time = 3.650 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:36.827 -- System time = 100.717 -- Game time = 3.700 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:37.057 -- System time = 100.947 -- Game time = 3.750 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:39.668 -- System time = 103.558 -- Game time = 3.800 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:39.886 -- System time = 103.775 -- Game time = 3.850 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:42.487 -- System time = 106.377 -- Game time = 3.900 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:42.714 -- System time = 106.604 -- Game time = 3.950 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:45.319 -- System time = 109.209 -- Game time = 4.000 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:45.560 -- System time = 109.450 -- Game time = 4.050 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:48.166 -- System time = 112.056 -- Game time = 4.100 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:48.397 -- System time = 112.287 -- Game time = 4.150 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:51.003 -- System time = 114.893 -- Game time = 4.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:51.225 -- System time = 115.115 -- Game time = 4.250 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:53.880 -- System time = 117.770 -- Game time = 4.300 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:54.156 -- System time = 118.046 -- Game time = 4.350 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:56.829 -- System time = 120.719 -- Game time = 4.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:07:57.100 -- System time = 120.990 -- Game time = 4.450 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:07:59.802 -- System time = 123.692 -- Game time = 4.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:00.097 -- System time = 123.987 -- Game time = 4.550 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:02.790 -- System time = 126.680 -- Game time = 4.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:03.048 -- System time = 126.938 -- Game time = 4.650 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:05.698 -- System time = 129.588 -- Game time = 4.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:05.935 -- System time = 129.825 -- Game time = 4.750 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:08.542 -- System time = 132.432 -- Game time = 4.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:08.772 -- System time = 132.662 -- Game time = 4.850 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:11.341 -- System time = 135.231 -- Game time = 4.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:11.599 -- System time = 135.489 -- Game time = 4.950 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:14.214 -- System time = 138.104 -- Game time = 5.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:14.464 -- System time = 138.354 -- Game time = 5.050 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:17.171 -- System time = 141.061 -- Game time = 5.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:17.394 -- System time = 141.284 -- Game time = 5.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:20.014 -- System time = 143.904 -- Game time = 5.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:20.228 -- System time = 144.118 -- Game time = 5.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:22.819 -- System time = 146.709 -- Game time = 5.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:23.033 -- System time = 146.923 -- Game time = 5.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:25.593 -- System time = 149.483 -- Game time = 5.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:25.806 -- System time = 149.696 -- Game time = 5.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:28.374 -- System time = 152.264 -- Game time = 5.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:28.602 -- System time = 152.492 -- Game time = 5.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:31.173 -- System time = 155.063 -- Game time = 5.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:31.384 -- System time = 155.274 -- Game time = 5.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:33.999 -- System time = 157.889 -- Game time = 5.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:34.232 -- System time = 158.122 -- Game time = 5.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:36.845 -- System time = 160.735 -- Game time = 5.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:37.059 -- System time = 160.949 -- Game time = 5.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:39.625 -- System time = 163.515 -- Game time = 5.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:39.842 -- System time = 163.732 -- Game time = 5.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:42.398 -- System time = 166.288 -- Game time = 6.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:42.612 -- System time = 166.502 -- Game time = 6.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:45.189 -- System time = 169.079 -- Game time = 6.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:45.398 -- System time = 169.288 -- Game time = 6.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:47.966 -- System time = 171.856 -- Game time = 6.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:48.178 -- System time = 172.068 -- Game time = 6.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:50.757 -- System time = 174.647 -- Game time = 6.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:50.970 -- System time = 174.860 -- Game time = 6.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:53.559 -- System time = 177.449 -- Game time = 6.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:53.773 -- System time = 177.663 -- Game time = 6.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:56.344 -- System time = 180.234 -- Game time = 6.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:56.560 -- System time = 180.449 -- Game time = 6.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:08:59.125 -- System time = 183.015 -- Game time = 6.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:08:59.340 -- System time = 183.230 -- Game time = 6.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:01.896 -- System time = 185.786 -- Game time = 6.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:02.108 -- System time = 185.998 -- Game time = 6.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:04.694 -- System time = 188.584 -- Game time = 6.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:04.907 -- System time = 188.797 -- Game time = 6.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:07.472 -- System time = 191.362 -- Game time = 6.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:07.689 -- System time = 191.579 -- Game time = 6.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:10.279 -- System time = 194.169 -- Game time = 7.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:10.517 -- System time = 194.407 -- Game time = 7.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:13.095 -- System time = 196.985 -- Game time = 7.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:13.288 -- System time = 197.178 -- Game time = 7.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:15.887 -- System time = 199.777 -- Game time = 7.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:16.102 -- System time = 199.992 -- Game time = 7.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:18.701 -- System time = 202.591 -- Game time = 7.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:18.910 -- System time = 202.800 -- Game time = 7.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:21.484 -- System time = 205.374 -- Game time = 7.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:21.709 -- System time = 205.599 -- Game time = 7.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:24.341 -- System time = 208.231 -- Game time = 7.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:24.588 -- System time = 208.478 -- Game time = 7.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:27.173 -- System time = 211.063 -- Game time = 7.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:27.373 -- System time = 211.263 -- Game time = 7.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:29.946 -- System time = 213.836 -- Game time = 7.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:30.157 -- System time = 214.047 -- Game time = 7.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:32.761 -- System time = 216.651 -- Game time = 7.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:32.973 -- System time = 216.863 -- Game time = 7.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:35.549 -- System time = 219.439 -- Game time = 7.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:35.755 -- System time = 219.645 -- Game time = 7.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:38.329 -- System time = 222.219 -- Game time = 8.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:38.543 -- System time = 222.433 -- Game time = 8.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:41.134 -- System time = 225.023 -- Game time = 8.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:41.334 -- System time = 225.224 -- Game time = 8.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:43.911 -- System time = 227.801 -- Game time = 8.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:44.141 -- System time = 228.031 -- Game time = 8.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:46.706 -- System time = 230.596 -- Game time = 8.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:46.910 -- System time = 230.800 -- Game time = 8.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:49.482 -- System time = 233.372 -- Game time = 8.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:49.689 -- System time = 233.579 -- Game time = 8.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:52.280 -- System time = 236.170 -- Game time = 8.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:52.508 -- System time = 236.398 -- Game time = 8.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:55.061 -- System time = 238.951 -- Game time = 8.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:55.276 -- System time = 239.166 -- Game time = 8.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:09:57.850 -- System time = 241.740 -- Game time = 8.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:09:58.056 -- System time = 241.946 -- Game time = 8.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:00.629 -- System time = 244.519 -- Game time = 8.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:00.855 -- System time = 244.745 -- Game time = 8.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:03.433 -- System time = 247.323 -- Game time = 8.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:03.657 -- System time = 247.546 -- Game time = 8.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:06.219 -- System time = 250.109 -- Game time = 9.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:06.467 -- System time = 250.357 -- Game time = 9.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:09.031 -- System time = 252.921 -- Game time = 9.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:09.243 -- System time = 253.133 -- Game time = 9.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:11.790 -- System time = 255.680 -- Game time = 9.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:12.018 -- System time = 255.908 -- Game time = 9.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:14.585 -- System time = 258.475 -- Game time = 9.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:14.801 -- System time = 258.691 -- Game time = 9.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:17.353 -- System time = 261.243 -- Game time = 9.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:17.590 -- System time = 261.480 -- Game time = 9.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:20.157 -- System time = 264.047 -- Game time = 9.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:20.404 -- System time = 264.294 -- Game time = 9.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:23.006 -- System time = 266.896 -- Game time = 9.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:23.225 -- System time = 267.115 -- Game time = 9.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:25.794 -- System time = 269.684 -- Game time = 9.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:26.024 -- System time = 269.914 -- Game time = 9.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:28.629 -- System time = 272.519 -- Game time = 9.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:28.867 -- System time = 272.757 -- Game time = 9.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:31.444 -- System time = 275.334 -- Game time = 9.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:31.673 -- System time = 275.563 -- Game time = 9.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:34.267 -- System time = 278.157 -- Game time = 10.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:34.534 -- System time = 278.424 -- Game time = 10.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:37.115 -- System time = 281.005 -- Game time = 10.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:37.368 -- System time = 281.258 -- Game time = 10.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:39.972 -- System time = 283.862 -- Game time = 10.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:40.247 -- System time = 284.137 -- Game time = 10.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:42.869 -- System time = 286.759 -- Game time = 10.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:43.115 -- System time = 287.005 -- Game time = 10.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:45.696 -- System time = 289.586 -- Game time = 10.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:45.946 -- System time = 289.836 -- Game time = 10.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:48.603 -- System time = 292.493 -- Game time = 10.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:48.860 -- System time = 292.750 -- Game time = 10.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:51.559 -- System time = 295.449 -- Game time = 10.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:51.773 -- System time = 295.663 -- Game time = 10.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:54.347 -- System time = 298.237 -- Game time = 10.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:54.576 -- System time = 298.466 -- Game time = 10.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:57.144 -- System time = 301.034 -- Game time = 10.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:10:57.355 -- System time = 301.245 -- Game time = 10.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:10:59.930 -- System time = 303.820 -- Game time = 10.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:00.142 -- System time = 304.032 -- Game time = 10.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:02.730 -- System time = 306.620 -- Game time = 11.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:02.961 -- System time = 306.851 -- Game time = 11.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:05.534 -- System time = 309.424 -- Game time = 11.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:05.756 -- System time = 309.646 -- Game time = 11.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:08.324 -- System time = 312.214 -- Game time = 11.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:08.534 -- System time = 312.424 -- Game time = 11.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:11.104 -- System time = 314.994 -- Game time = 11.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:11.312 -- System time = 315.202 -- Game time = 11.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:13.905 -- System time = 317.795 -- Game time = 11.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:14.122 -- System time = 318.012 -- Game time = 11.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:16.715 -- System time = 320.605 -- Game time = 11.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:16.945 -- System time = 320.835 -- Game time = 11.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:19.514 -- System time = 323.404 -- Game time = 11.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:19.736 -- System time = 323.626 -- Game time = 11.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:22.329 -- System time = 326.219 -- Game time = 11.700 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:22.539 -- System time = 326.429 -- Game time = 11.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:25.145 -- System time = 329.034 -- Game time = 11.800 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:25.373 -- System time = 329.263 -- Game time = 11.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:27.963 -- System time = 331.853 -- Game time = 11.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:28.187 -- System time = 332.077 -- Game time = 11.950 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:30.743 -- System time = 334.633 -- Game time = 12.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:30.965 -- System time = 334.855 -- Game time = 12.050 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:33.533 -- System time = 337.423 -- Game time = 12.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:33.742 -- System time = 337.632 -- Game time = 12.150 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:36.332 -- System time = 340.222 -- Game time = 12.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:36.551 -- System time = 340.441 -- Game time = 12.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:39.152 -- System time = 343.042 -- Game time = 12.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:39.365 -- System time = 343.255 -- Game time = 12.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:41.946 -- System time = 345.836 -- Game time = 12.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:11:42.167 -- System time = 346.057 -- Game time = 12.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_3255_rep0_Town13_ParkingCrossingPedestrian_1_0_05_25_20_04_36
+=== [Agent] -- Wallclock = 2026-05-25 20:11:44.744 -- System time = 348.634 -- Game time = 12.500 -- Ratio = 0.036x
+[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_3255 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═══════════════════════╤═════════════════════╕
+│ Start Time            │ 2026-05-25 20:05:56 │
+├───────────────────────┼─────────────────────┤
+│ End Time              │ 2026-05-25 20:11:46 │
+├───────────────────────┼─────────────────────┤
+│ System Time           │ 350.44s             │
+├───────────────────────┼─────────────────────┤
+│ Game Time             │ 12.55s              │
+├───────────────────────┼─────────────────────┤
+│ Ratio (Game / System) │ 0.036               │
+╘═══════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤═════════╕
+│ Criterion             │ Result  │ Value   │
+├───────────────────────┼─────────┼─────────┤
+│ RouteCompletionTest   │ [91mFAILURE[0m │ 6.93 %  │
+├───────────────────────┼─────────┼─────────┤
+│ OutsideRouteLanesTest │ [92mSUCCESS[0m │ 0 %     │
+├───────────────────────┼─────────┼─────────┤
+│ CollisionTest         │ [91mFAILURE[0m │ 1 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningRedLightTest   │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ MinSpeedTest          │ [91mFAILURE[0m │ 58.01 % │
+├───────────────────────┼─────────┼─────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ Timeout               │ [92mSUCCESS[0m │         │
+╘═══════════════════════╧═════════╧═════════╛
+
+[1m> Registering the route statistics[0m
+False
+
+[1m========= Preparing RouteScenario_26405 (repetition 0) =========[0m
+[1m> Loading the world[0m
+[1m> Setting up the agent[0m
+adzoo.drivetransformer.mmdet3d_plugin
+<All keys matched successfully>
+SAVE Result to  drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+[1m> Running the route[0m
+=== [Agent] -- Wallclock = 2026-05-25 20:12:05.168 -- System time = 0.000 -- Game time = 0.050 -- Ratio = 0.000x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:07.691 -- System time = 2.523 -- Game time = 0.100 -- Ratio = 0.040x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:07.955 -- System time = 2.787 -- Game time = 0.150 -- Ratio = 0.054x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:10.306 -- System time = 5.138 -- Game time = 0.200 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:10.573 -- System time = 5.405 -- Game time = 0.250 -- Ratio = 0.046x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:12.931 -- System time = 7.763 -- Game time = 0.300 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:13.187 -- System time = 8.019 -- Game time = 0.350 -- Ratio = 0.044x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:15.520 -- System time = 10.352 -- Game time = 0.400 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:15.798 -- System time = 10.630 -- Game time = 0.450 -- Ratio = 0.042x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:18.203 -- System time = 13.035 -- Game time = 0.500 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:18.476 -- System time = 13.308 -- Game time = 0.550 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:20.772 -- System time = 15.604 -- Game time = 0.600 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:21.003 -- System time = 15.835 -- Game time = 0.650 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:23.327 -- System time = 18.159 -- Game time = 0.700 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:23.538 -- System time = 18.371 -- Game time = 0.750 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:25.801 -- System time = 20.633 -- Game time = 0.800 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:26.014 -- System time = 20.846 -- Game time = 0.850 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:28.288 -- System time = 23.120 -- Game time = 0.900 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:28.527 -- System time = 23.359 -- Game time = 0.950 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:30.806 -- System time = 25.638 -- Game time = 1.000 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:31.052 -- System time = 25.884 -- Game time = 1.050 -- Ratio = 0.041x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:33.333 -- System time = 28.165 -- Game time = 1.100 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:33.566 -- System time = 28.398 -- Game time = 1.150 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:35.883 -- System time = 30.715 -- Game time = 1.200 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:36.147 -- System time = 30.979 -- Game time = 1.250 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:38.531 -- System time = 33.363 -- Game time = 1.300 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:38.795 -- System time = 33.627 -- Game time = 1.350 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:41.140 -- System time = 35.972 -- Game time = 1.400 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:41.441 -- System time = 36.273 -- Game time = 1.450 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:43.828 -- System time = 38.660 -- Game time = 1.500 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:44.110 -- System time = 38.942 -- Game time = 1.550 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:46.429 -- System time = 41.262 -- Game time = 1.600 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:46.708 -- System time = 41.540 -- Game time = 1.650 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:49.008 -- System time = 43.840 -- Game time = 1.700 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:49.249 -- System time = 44.082 -- Game time = 1.750 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:51.612 -- System time = 46.444 -- Game time = 1.800 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:51.863 -- System time = 46.695 -- Game time = 1.850 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:54.257 -- System time = 49.089 -- Game time = 1.900 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:54.500 -- System time = 49.332 -- Game time = 1.950 -- Ratio = 0.040x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:56.908 -- System time = 51.740 -- Game time = 2.000 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:57.146 -- System time = 51.978 -- Game time = 2.050 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:12:59.577 -- System time = 54.409 -- Game time = 2.100 -- Ratio = 0.039x
+=== [Agent] -- Wallclock = 2026-05-25 20:12:59.821 -- System time = 54.653 -- Game time = 2.150 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:02.330 -- System time = 57.163 -- Game time = 2.200 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:02.575 -- System time = 57.407 -- Game time = 2.250 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:05.129 -- System time = 59.961 -- Game time = 2.300 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:05.359 -- System time = 60.191 -- Game time = 2.350 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:07.846 -- System time = 62.679 -- Game time = 2.400 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:08.091 -- System time = 62.923 -- Game time = 2.450 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:10.661 -- System time = 65.493 -- Game time = 2.500 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:10.898 -- System time = 65.731 -- Game time = 2.550 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:13.434 -- System time = 68.266 -- Game time = 2.600 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:13.661 -- System time = 68.493 -- Game time = 2.650 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:16.194 -- System time = 71.026 -- Game time = 2.700 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:16.442 -- System time = 71.274 -- Game time = 2.750 -- Ratio = 0.039x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:18.988 -- System time = 73.820 -- Game time = 2.800 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:19.252 -- System time = 74.084 -- Game time = 2.850 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:22.050 -- System time = 76.882 -- Game time = 2.900 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:22.289 -- System time = 77.121 -- Game time = 2.950 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:25.081 -- System time = 79.913 -- Game time = 3.000 -- Ratio = 0.038x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:25.321 -- System time = 80.153 -- Game time = 3.050 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:28.002 -- System time = 82.834 -- Game time = 3.100 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:28.232 -- System time = 83.064 -- Game time = 3.150 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:30.906 -- System time = 85.738 -- Game time = 3.200 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:31.131 -- System time = 85.963 -- Game time = 3.250 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:33.824 -- System time = 88.656 -- Game time = 3.300 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:34.029 -- System time = 88.861 -- Game time = 3.350 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:36.756 -- System time = 91.588 -- Game time = 3.400 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:36.997 -- System time = 91.829 -- Game time = 3.450 -- Ratio = 0.038x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:39.792 -- System time = 94.624 -- Game time = 3.500 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:40.031 -- System time = 94.863 -- Game time = 3.550 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:42.831 -- System time = 97.663 -- Game time = 3.600 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:43.041 -- System time = 97.874 -- Game time = 3.650 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:45.881 -- System time = 100.713 -- Game time = 3.700 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:46.092 -- System time = 100.925 -- Game time = 3.750 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:48.942 -- System time = 103.774 -- Game time = 3.800 -- Ratio = 0.037x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:49.158 -- System time = 103.990 -- Game time = 3.850 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:52.059 -- System time = 106.891 -- Game time = 3.900 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:52.274 -- System time = 107.106 -- Game time = 3.950 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:55.202 -- System time = 110.034 -- Game time = 4.000 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:55.441 -- System time = 110.273 -- Game time = 4.050 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:13:58.350 -- System time = 113.182 -- Game time = 4.100 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:13:58.592 -- System time = 113.424 -- Game time = 4.150 -- Ratio = 0.037x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:01.519 -- System time = 116.351 -- Game time = 4.200 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:01.754 -- System time = 116.586 -- Game time = 4.250 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:04.648 -- System time = 119.480 -- Game time = 4.300 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:04.886 -- System time = 119.718 -- Game time = 4.350 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:07.803 -- System time = 122.635 -- Game time = 4.400 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:08.018 -- System time = 122.850 -- Game time = 4.450 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:11.011 -- System time = 125.843 -- Game time = 4.500 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:11.264 -- System time = 126.097 -- Game time = 4.550 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:14.311 -- System time = 129.143 -- Game time = 4.600 -- Ratio = 0.036x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:14.569 -- System time = 129.401 -- Game time = 4.650 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:17.778 -- System time = 132.610 -- Game time = 4.700 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:18.007 -- System time = 132.839 -- Game time = 4.750 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:21.192 -- System time = 136.024 -- Game time = 4.800 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:21.409 -- System time = 136.241 -- Game time = 4.850 -- Ratio = 0.036x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:24.576 -- System time = 139.408 -- Game time = 4.900 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:24.804 -- System time = 139.637 -- Game time = 4.950 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:28.048 -- System time = 142.880 -- Game time = 5.000 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:28.284 -- System time = 143.116 -- Game time = 5.050 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:31.576 -- System time = 146.408 -- Game time = 5.100 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:31.803 -- System time = 146.635 -- Game time = 5.150 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:35.083 -- System time = 149.915 -- Game time = 5.200 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:35.303 -- System time = 150.135 -- Game time = 5.250 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:38.532 -- System time = 153.364 -- Game time = 5.300 -- Ratio = 0.035x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:38.782 -- System time = 153.614 -- Game time = 5.350 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:41.947 -- System time = 156.779 -- Game time = 5.400 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:42.193 -- System time = 157.025 -- Game time = 5.450 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:45.322 -- System time = 160.154 -- Game time = 5.500 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:45.557 -- System time = 160.389 -- Game time = 5.550 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:48.592 -- System time = 163.424 -- Game time = 5.600 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:48.832 -- System time = 163.664 -- Game time = 5.650 -- Ratio = 0.035x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:51.802 -- System time = 166.634 -- Game time = 5.700 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:52.033 -- System time = 166.865 -- Game time = 5.750 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:54.989 -- System time = 169.821 -- Game time = 5.800 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:55.221 -- System time = 170.053 -- Game time = 5.850 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:14:58.197 -- System time = 173.029 -- Game time = 5.900 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:14:58.427 -- System time = 173.260 -- Game time = 5.950 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:01.355 -- System time = 176.187 -- Game time = 6.000 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:01.596 -- System time = 176.429 -- Game time = 6.050 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:04.543 -- System time = 179.375 -- Game time = 6.100 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:04.758 -- System time = 179.591 -- Game time = 6.150 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:07.611 -- System time = 182.443 -- Game time = 6.200 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:07.839 -- System time = 182.671 -- Game time = 6.250 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:10.728 -- System time = 185.560 -- Game time = 6.300 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:10.965 -- System time = 185.798 -- Game time = 6.350 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:13.875 -- System time = 188.707 -- Game time = 6.400 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:14.112 -- System time = 188.944 -- Game time = 6.450 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:17.038 -- System time = 191.870 -- Game time = 6.500 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:17.267 -- System time = 192.099 -- Game time = 6.550 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:20.194 -- System time = 195.027 -- Game time = 6.600 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:20.426 -- System time = 195.258 -- Game time = 6.650 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:23.370 -- System time = 198.202 -- Game time = 6.700 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:23.615 -- System time = 198.447 -- Game time = 6.750 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:26.481 -- System time = 201.313 -- Game time = 6.800 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:26.730 -- System time = 201.562 -- Game time = 6.850 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:29.568 -- System time = 204.400 -- Game time = 6.900 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:29.806 -- System time = 204.638 -- Game time = 6.950 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:32.640 -- System time = 207.472 -- Game time = 7.000 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:32.889 -- System time = 207.721 -- Game time = 7.050 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:35.793 -- System time = 210.625 -- Game time = 7.100 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:36.066 -- System time = 210.898 -- Game time = 7.150 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:38.954 -- System time = 213.786 -- Game time = 7.200 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:39.201 -- System time = 214.033 -- Game time = 7.250 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:42.120 -- System time = 216.952 -- Game time = 7.300 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:42.358 -- System time = 217.190 -- Game time = 7.350 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:45.288 -- System time = 220.120 -- Game time = 7.400 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:45.530 -- System time = 220.362 -- Game time = 7.450 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:48.434 -- System time = 223.266 -- Game time = 7.500 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:48.673 -- System time = 223.505 -- Game time = 7.550 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:51.625 -- System time = 226.457 -- Game time = 7.600 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:51.854 -- System time = 226.686 -- Game time = 7.650 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:54.887 -- System time = 229.719 -- Game time = 7.700 -- Ratio = 0.034x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:55.162 -- System time = 229.994 -- Game time = 7.750 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:15:58.276 -- System time = 233.108 -- Game time = 7.800 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:15:58.515 -- System time = 233.347 -- Game time = 7.850 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:01.516 -- System time = 236.348 -- Game time = 7.900 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:01.764 -- System time = 236.596 -- Game time = 7.950 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:04.755 -- System time = 239.587 -- Game time = 8.000 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:05.001 -- System time = 239.833 -- Game time = 8.050 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:08.036 -- System time = 242.868 -- Game time = 8.100 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:08.254 -- System time = 243.086 -- Game time = 8.150 -- Ratio = 0.034x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:11.454 -- System time = 246.286 -- Game time = 8.200 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:11.676 -- System time = 246.508 -- Game time = 8.250 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:14.906 -- System time = 249.739 -- Game time = 8.300 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:15.122 -- System time = 249.954 -- Game time = 8.350 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:18.398 -- System time = 253.230 -- Game time = 8.400 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:18.623 -- System time = 253.455 -- Game time = 8.450 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:21.850 -- System time = 256.682 -- Game time = 8.500 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:22.095 -- System time = 256.927 -- Game time = 8.550 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:25.399 -- System time = 260.231 -- Game time = 8.600 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:25.692 -- System time = 260.524 -- Game time = 8.650 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:29.033 -- System time = 263.866 -- Game time = 8.700 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:29.266 -- System time = 264.099 -- Game time = 8.750 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:32.620 -- System time = 267.452 -- Game time = 8.800 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:32.899 -- System time = 267.731 -- Game time = 8.850 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:36.360 -- System time = 271.192 -- Game time = 8.900 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:36.631 -- System time = 271.463 -- Game time = 8.950 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:39.844 -- System time = 274.676 -- Game time = 9.000 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:40.131 -- System time = 274.964 -- Game time = 9.050 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:43.309 -- System time = 278.141 -- Game time = 9.100 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:43.554 -- System time = 278.386 -- Game time = 9.150 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:46.724 -- System time = 281.556 -- Game time = 9.200 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:46.973 -- System time = 281.806 -- Game time = 9.250 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:50.115 -- System time = 284.947 -- Game time = 9.300 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:50.427 -- System time = 285.259 -- Game time = 9.350 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:53.470 -- System time = 288.302 -- Game time = 9.400 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:53.716 -- System time = 288.548 -- Game time = 9.450 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:16:56.844 -- System time = 291.676 -- Game time = 9.500 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:16:57.103 -- System time = 291.935 -- Game time = 9.550 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:00.151 -- System time = 294.983 -- Game time = 9.600 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:00.377 -- System time = 295.209 -- Game time = 9.650 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:03.464 -- System time = 298.296 -- Game time = 9.700 -- Ratio = 0.033x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:03.721 -- System time = 298.553 -- Game time = 9.750 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:06.857 -- System time = 301.689 -- Game time = 9.800 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:07.109 -- System time = 301.941 -- Game time = 9.850 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:10.167 -- System time = 304.999 -- Game time = 9.900 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:10.409 -- System time = 305.241 -- Game time = 9.950 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:13.509 -- System time = 308.342 -- Game time = 10.000 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:13.781 -- System time = 308.613 -- Game time = 10.050 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:16.852 -- System time = 311.684 -- Game time = 10.100 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:17.095 -- System time = 311.927 -- Game time = 10.150 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:20.244 -- System time = 315.076 -- Game time = 10.200 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:20.501 -- System time = 315.333 -- Game time = 10.250 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:23.748 -- System time = 318.580 -- Game time = 10.300 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:24.040 -- System time = 318.872 -- Game time = 10.350 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:27.223 -- System time = 322.055 -- Game time = 10.400 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:27.448 -- System time = 322.280 -- Game time = 10.450 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:30.572 -- System time = 325.404 -- Game time = 10.500 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:30.821 -- System time = 325.653 -- Game time = 10.550 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:33.801 -- System time = 328.633 -- Game time = 10.600 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:34.038 -- System time = 328.870 -- Game time = 10.650 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:36.966 -- System time = 331.798 -- Game time = 10.700 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:37.212 -- System time = 332.044 -- Game time = 10.750 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:40.127 -- System time = 334.959 -- Game time = 10.800 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:40.380 -- System time = 335.212 -- Game time = 10.850 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:43.236 -- System time = 338.068 -- Game time = 10.900 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:43.507 -- System time = 338.339 -- Game time = 10.950 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:46.398 -- System time = 341.230 -- Game time = 11.000 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:46.632 -- System time = 341.464 -- Game time = 11.050 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:49.379 -- System time = 344.211 -- Game time = 11.100 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:49.635 -- System time = 344.467 -- Game time = 11.150 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:52.268 -- System time = 347.100 -- Game time = 11.200 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:52.530 -- System time = 347.362 -- Game time = 11.250 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:55.134 -- System time = 349.967 -- Game time = 11.300 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:55.410 -- System time = 350.242 -- Game time = 11.350 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:17:58.008 -- System time = 352.840 -- Game time = 11.400 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:17:58.250 -- System time = 353.082 -- Game time = 11.450 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:00.831 -- System time = 355.663 -- Game time = 11.500 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:01.095 -- System time = 355.927 -- Game time = 11.550 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:03.742 -- System time = 358.574 -- Game time = 11.600 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:04.009 -- System time = 358.841 -- Game time = 11.650 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:06.710 -- System time = 361.542 -- Game time = 11.700 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:06.978 -- System time = 361.810 -- Game time = 11.750 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:09.613 -- System time = 364.445 -- Game time = 11.800 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:09.873 -- System time = 364.705 -- Game time = 11.850 -- Ratio = 0.032x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:12.508 -- System time = 367.340 -- Game time = 11.900 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:12.752 -- System time = 367.584 -- Game time = 11.950 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:15.371 -- System time = 370.203 -- Game time = 12.000 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:15.683 -- System time = 370.515 -- Game time = 12.050 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:18.339 -- System time = 373.171 -- Game time = 12.100 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:18.601 -- System time = 373.433 -- Game time = 12.150 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:21.189 -- System time = 376.021 -- Game time = 12.200 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:21.457 -- System time = 376.289 -- Game time = 12.250 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:24.108 -- System time = 378.940 -- Game time = 12.300 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:24.359 -- System time = 379.191 -- Game time = 12.350 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:27.040 -- System time = 381.872 -- Game time = 12.400 -- Ratio = 0.032x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:27.306 -- System time = 382.138 -- Game time = 12.450 -- Ratio = 0.033x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_26405_rep0_Town15_StaticCutIn_1_0_05_25_20_11_47
+=== [Agent] -- Wallclock = 2026-05-25 20:18:30.123 -- System time = 384.956 -- Game time = 12.500 -- Ratio = 0.032x
+[1m> Stopping the route[0m
+
+[1m========= Results of RouteScenario_26405 (repetition 0) ------ [91mFAILURE[0m [1m=========[0m
+
+╒═══════════════════════╤═════════════════════╕
+│ Start Time            │ 2026-05-25 20:12:05 │
+├───────────────────────┼─────────────────────┤
+│ End Time              │ 2026-05-25 20:18:31 │
+├───────────────────────┼─────────────────────┤
+│ System Time           │ 386.4s              │
+├───────────────────────┼─────────────────────┤
+│ Game Time             │ 12.55s              │
+├───────────────────────┼─────────────────────┤
+│ Ratio (Game / System) │ 0.032               │
+╘═══════════════════════╧═════════════════════╛
+
+╒═══════════════════════╤═════════╤═════════╕
+│ Criterion             │ Result  │ Value   │
+├───────────────────────┼─────────┼─────────┤
+│ RouteCompletionTest   │ [91mFAILURE[0m │ 9.08 %  │
+├───────────────────────┼─────────┼─────────┤
+│ OutsideRouteLanesTest │ [91mFAILURE[0m │ 0 %     │
+├───────────────────────┼─────────┼─────────┤
+│ CollisionTest         │ [91mFAILURE[0m │ 3 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningRedLightTest   │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ RunningStopTest       │ [92mSUCCESS[0m │ 0 times │
+├───────────────────────┼─────────┼─────────┤
+│ MinSpeedTest          │ [91mFAILURE[0m │ 56.26 % │
+├───────────────────────┼─────────┼─────────┤
+│ InRouteTest           │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ AgentBlockedTest      │ [92mSUCCESS[0m │         │
+├───────────────────────┼─────────┼─────────┤
+│ Timeout               │ [92mSUCCESS[0m │         │
+╘═══════════════════════╧═════════╧═════════╛
+
+[1m> Registering the route statistics[0m
+False
+
+[1m========= Preparing RouteScenario_25381 (repetition 0) =========[0m
+[1m> Loading the world[0m
+[1m> Setting up the agent[0m
+adzoo.drivetransformer.mmdet3d_plugin
+<All keys matched successfully>
+SAVE Result to  drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+[1m> Running the route[0m
+=== [Agent] -- Wallclock = 2026-05-25 20:18:50.031 -- System time = 0.000 -- Game time = 0.050 -- Ratio = 0.000x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:18:51.494 -- System time = 1.462 -- Game time = 0.100 -- Ratio = 0.068x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:51.750 -- System time = 1.718 -- Game time = 0.150 -- Ratio = 0.087x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:18:53.269 -- System time = 3.238 -- Game time = 0.200 -- Ratio = 0.062x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:53.526 -- System time = 3.495 -- Game time = 0.250 -- Ratio = 0.072x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:18:55.017 -- System time = 4.986 -- Game time = 0.300 -- Ratio = 0.060x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:55.265 -- System time = 5.234 -- Game time = 0.350 -- Ratio = 0.067x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:18:56.883 -- System time = 6.852 -- Game time = 0.400 -- Ratio = 0.058x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:57.152 -- System time = 7.121 -- Game time = 0.450 -- Ratio = 0.063x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:18:58.867 -- System time = 8.836 -- Game time = 0.500 -- Ratio = 0.057x
+=== [Agent] -- Wallclock = 2026-05-25 20:18:59.159 -- System time = 9.128 -- Game time = 0.550 -- Ratio = 0.060x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:00.909 -- System time = 10.878 -- Game time = 0.600 -- Ratio = 0.055x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:01.158 -- System time = 11.126 -- Game time = 0.650 -- Ratio = 0.058x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:02.922 -- System time = 12.891 -- Game time = 0.700 -- Ratio = 0.054x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:03.191 -- System time = 13.160 -- Game time = 0.750 -- Ratio = 0.057x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:05.041 -- System time = 15.009 -- Game time = 0.800 -- Ratio = 0.053x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:05.325 -- System time = 15.293 -- Game time = 0.850 -- Ratio = 0.056x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:07.166 -- System time = 17.134 -- Game time = 0.900 -- Ratio = 0.053x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:07.450 -- System time = 17.419 -- Game time = 0.950 -- Ratio = 0.055x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:09.316 -- System time = 19.284 -- Game time = 1.000 -- Ratio = 0.052x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:09.606 -- System time = 19.575 -- Game time = 1.050 -- Ratio = 0.054x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:11.485 -- System time = 21.454 -- Game time = 1.100 -- Ratio = 0.051x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:11.758 -- System time = 21.727 -- Game time = 1.150 -- Ratio = 0.053x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:13.663 -- System time = 23.632 -- Game time = 1.200 -- Ratio = 0.051x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:13.951 -- System time = 23.920 -- Game time = 1.250 -- Ratio = 0.052x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:15.838 -- System time = 25.807 -- Game time = 1.300 -- Ratio = 0.050x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:16.296 -- System time = 26.265 -- Game time = 1.350 -- Ratio = 0.051x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:18.182 -- System time = 28.151 -- Game time = 1.400 -- Ratio = 0.050x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:18.446 -- System time = 28.415 -- Game time = 1.450 -- Ratio = 0.051x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:20.307 -- System time = 30.275 -- Game time = 1.500 -- Ratio = 0.050x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:20.578 -- System time = 30.547 -- Game time = 1.550 -- Ratio = 0.051x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:22.455 -- System time = 32.424 -- Game time = 1.600 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:22.714 -- System time = 32.683 -- Game time = 1.650 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:24.580 -- System time = 34.549 -- Game time = 1.700 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:24.849 -- System time = 34.818 -- Game time = 1.750 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:26.697 -- System time = 36.666 -- Game time = 1.800 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:26.964 -- System time = 36.933 -- Game time = 1.850 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:28.770 -- System time = 38.738 -- Game time = 1.900 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:29.038 -- System time = 39.007 -- Game time = 1.950 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:30.850 -- System time = 40.818 -- Game time = 2.000 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:31.106 -- System time = 41.075 -- Game time = 2.050 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:32.886 -- System time = 42.855 -- Game time = 2.100 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:33.141 -- System time = 43.109 -- Game time = 2.150 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:34.902 -- System time = 44.871 -- Game time = 2.200 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:35.160 -- System time = 45.129 -- Game time = 2.250 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:36.929 -- System time = 46.898 -- Game time = 2.300 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:37.220 -- System time = 47.189 -- Game time = 2.350 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:39.034 -- System time = 49.002 -- Game time = 2.400 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:39.302 -- System time = 49.271 -- Game time = 2.450 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:41.085 -- System time = 51.053 -- Game time = 2.500 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:41.370 -- System time = 51.339 -- Game time = 2.550 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:43.138 -- System time = 53.107 -- Game time = 2.600 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:43.417 -- System time = 53.386 -- Game time = 2.650 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:45.180 -- System time = 55.149 -- Game time = 2.700 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:45.439 -- System time = 55.408 -- Game time = 2.750 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:47.187 -- System time = 57.156 -- Game time = 2.800 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:47.463 -- System time = 57.432 -- Game time = 2.850 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:49.248 -- System time = 59.217 -- Game time = 2.900 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:49.529 -- System time = 59.498 -- Game time = 2.950 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:51.304 -- System time = 61.272 -- Game time = 3.000 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:51.593 -- System time = 61.561 -- Game time = 3.050 -- Ratio = 0.050x
+save result at:/workspace/end2end_AD_DriveTransformer/Bench2Drive/save_path/drivetransformer_bench2drive_dev10_RouteScenario_25381_rep0_Town05_HazardAtSideLane_1_12_05_25_20_18_32
+=== [Agent] -- Wallclock = 2026-05-25 20:19:53.408 -- System time = 63.377 -- Game time = 3.100 -- Ratio = 0.049x
+=== [Agent] -- Wallclock = 2026-05-25 20:19:53.724 -- System time = 63.692 -- Game time = 3.150 -- Ratio = 0.049x
