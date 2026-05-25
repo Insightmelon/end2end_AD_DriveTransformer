@@ -136,7 +136,7 @@ class AttentionLayer(nn.Module):
             return self.postnorm(self.proj(cp.checkpoint(xops.memory_efficient_attention, query, key, value, attn_bias, self.attn_drop, ).view(B, N_Q, -1))) + identity
         else:
             return self.postnorm(self.proj(xops.memory_efficient_attention(query, key, value, attn_bias=attn_bias, p=self.attn_drop,).view(B, N_Q, -1))) + identity
-    
+
 
 @FEEDFORWARD_NETWORK.register_module()
 class SwiGLULayer(BaseModule):
@@ -740,8 +740,10 @@ class DriveTransformerDecoderLayer(BaseModule):
                 pass
                 ###############################################################
                 # mask[ego_range, :] = False
-                mask = mask.unsqueeze(0)
-                attn_masks[attn_index] = mask
+                attn_masks[attn_index] = (
+                    mask.unsqueeze(0).expand(query.shape[0], -1, -1)
+                    if mask.any() else None
+                )
 
                 query = self.task_self_attentions[task_self_attn_index](
                     query,
@@ -992,14 +994,6 @@ class DriveTransformerDecoder(TransformerLayerSequence):
                     f"shape={tuple(map_reg_output.shape)}"
                 )
 
-            print(
-                f"[TODO-7 debug] lid={lid}, "
-                f"map_query={tuple(map_query.shape)}, "
-                f"map_pts_pos_embed={tuple(map_pts_pos_embed.shape)}, "
-                f"map_pts_coord={tuple(map_pts_coord.shape)}, "
-                f"map_reg_output={tuple(map_reg_output.shape)}"
-            )
-
             if self.refine:  # coarse-to-fine optimization
                 map_pts_coord_refine = map_reg_output.view(
                     map_pts_coord.shape[0],
@@ -1185,8 +1179,7 @@ class DriveTransformerPreDecoder(TransformerLayerSequence):
                 intermediate.append(self.post_norm(query))
             else:
                 intermediate.append(query)
-                
+
         if self.return_intermediate and len(self.layers) > 1:
             return torch.stack(intermediate)
         return query
-    

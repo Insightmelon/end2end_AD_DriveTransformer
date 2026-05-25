@@ -692,7 +692,7 @@ class DriveTransformerlHead(BaseModule):
 
         ###################################################################
         if len(ego_query.shape) == 2:
-            ego_query = ego_query.unsqueeze(0)
+            ego_query = ego_query.unsqueeze(1)
             
         if self.ego_multi_modal:
             mode_anchor_ref = self.anchor_ref.unsqueeze(0).expand(bs, -1, -1, -1)
